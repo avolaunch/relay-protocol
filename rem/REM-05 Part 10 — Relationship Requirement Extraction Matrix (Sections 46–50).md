@@ -2,7 +2,7 @@
 
 ## Document status
 
-**Canonical editorial extraction**
+**Canonical editorial extraction — remediated following REM-05R-01**
 
 This document extracts protocol requirements from Sections 46–50 of `design-notes/05-relationship-model.md`.
 
@@ -32,13 +32,13 @@ Requirement identifiers continue sequentially from Part 9, beginning with `REM-0
 Section 46: “Multiple applications may attempt to create equivalent relationship records.”
 
 **Requirement**  
-A Relay repository MUST anticipate that multiple applications may independently attempt to create semantically equivalent relationship records for the same source, target and context.
+Multiple applications MAY attempt to create semantically equivalent relationship records for the same source, target and context.
 
 **Classification**  
-Relationship lifecycle; interoperability; duplicate handling.
+Descriptive possibility; interoperability; duplicate-handling context.
 
 **Notes**  
-Application multiplicity must not cause the portable relationship graph to fragment into client-owned duplicates.
+This entry records the condition that motivates the normative duplicate-prevention guidance in REM-05-507. It does not independently impose a mandatory repository obligation.
 
 ---
 
@@ -58,32 +58,32 @@ Duplicate prevention is conditional on the relationship schema defining the rele
 
 ---
 
-## REM-05-508 — Duplicate prevention must respect source, target and context
+## REM-05-508 — Duplicate prevention should respect source, target and context
 
 **Source**  
 Section 46: “one active relationship per source, target and context.”
 
 **Requirement**  
-Where a relationship schema defines uniqueness by source, target and context, duplicate detection MUST evaluate all of those dimensions rather than treating target identity alone as sufficient.
+Where a relationship schema defines uniqueness by source, target and context, duplicate detection SHOULD evaluate all of those dimensions rather than treating target identity alone as sufficient.
 
 **Classification**  
-Uniqueness; context; schema semantics.
+Uniqueness; context; schema semantics; recommendation.
 
 **Notes**  
-The same identities may legitimately have relationships of different types or in different contexts.
+This preserves the normative strength of the parent `SHOULD` sentence. The same identities may legitimately have relationships of different types or in different contexts.
 
 ---
 
-## REM-05-509 — Client changes must not require duplicate active follows
+## REM-05-509 — Client changes should not require duplicate active follows
 
 **Source**  
 Section 46: “Alice should not need five separate active follow records for Bob merely because five clients were used.”
 
 **Requirement**  
-A user MUST NOT be required to create a separate active relationship record solely because the same relationship is accessed or managed through a different compatible application.
+A user SHOULD NOT be required to create a separate active relationship record solely because the same relationship is accessed or managed through a different compatible application.
 
 **Classification**  
-Application portability; relationship continuity; duplicate prevention.
+Application portability; relationship continuity; duplicate prevention; recommendation.
 
 **Notes**  
 The portable relationship is independent of the client through which it is created or used.
@@ -166,32 +166,35 @@ Repository enforcement; schema validation; uniqueness.
 
 ---
 
-## REM-05-515 — Uniqueness constraints must not collapse different relationship types
+## REM-05-515 — Different relationship types may coexist
 
 **Source**  
 Section 47: “Different relationship types or contexts may coexist.”
 
 **Requirement**  
-A repository MUST NOT apply a uniqueness rule in a manner that prevents different relationship types from legitimately coexisting between the same identities unless the governing schema explicitly requires that restriction.
+Different relationship types MAY coexist between the same identities where the governing schemas permit them.
 
 **Classification**  
-Relationship semantics; coexistence; schema enforcement.
+Relationship semantics; coexistence; schema-defined multiplicity.
+
+**Notes**  
+The source permits coexistence; it does not establish an unconditional mandatory coexistence rule.
 
 ---
 
-## REM-05-516 — Uniqueness constraints must not collapse different contexts
+## REM-05-516 — Different relationship contexts may coexist
 
 **Source**  
 Section 47: “Different relationship types or contexts may coexist.”
 
 **Requirement**  
-A repository MUST permit relationships in distinct contexts to coexist where the governing schema treats those contexts as independently valid.
+Relationships in different contexts MAY coexist where the governing schema treats those contexts as independently valid.
 
 **Classification**  
 Context; uniqueness; relationship multiplicity.
 
 **Notes**  
-A context-specific relationship must not be mistaken for a global relationship or for an equivalent relationship in another context.
+A context-specific relationship must not be mistaken for a global relationship or for an equivalent relationship in another context. The source permits, rather than universally mandates, such coexistence.
 
 ---
 
@@ -568,12 +571,15 @@ This requirement concerns future access. It does not by itself assert retroactiv
 
 ## Editorial QA
 
-The extraction for Sections 46–50 has been reviewed for numbering, traceability, normative strength and separation of protocol layers.
+The remediated extraction for Sections 46–50 has been reviewed for numbering, traceability, normative strength and separation of protocol layers.
 
-- Requirement numbering is continuous from `REM-05-506` through `REM-05-542` with no gaps or duplicates.
-- Every requirement traces to an explicit statement, list item or example in Sections 46–50 of the source model.
-- Duplicate prevention and uniqueness are kept schema-dependent; the extraction does not invent a universal uniqueness key for all relationship types.
-- Application-specific metadata is kept separate from the canonical relationship so that interface preferences do not become protocol semantics.
-- Algorithmic use of relationships remains application- or subscription-specific; no relationship is converted into a mandatory ranking, feed or trust algorithm.
-- Relationship-based access is treated as an explicit access-policy mechanism rather than as authority inherent in the social relationship itself.
-- Dynamic termination affects future relationship-dependent access without being overstated as retroactive erasure.
+- Requirement numbering remains continuous from `REM-05-506` through `REM-05-542` with no gaps or duplicates.
+- REM-05-506 is retained as descriptive context rather than a mandatory repository obligation.
+- REM-05-508 preserves the `SHOULD` strength of its parent duplicate-prevention sentence.
+- REM-05-509 preserves the source’s `SHOULD NOT` strength.
+- REM-05-515 and REM-05-516 preserve the source’s permissive `MAY` semantics for coexistence.
+- All unaffected requirements retain their prior substance and identifiers.
+- Duplicate prevention and uniqueness remain schema-dependent.
+- Application-specific metadata remains separate from canonical relationship semantics.
+- Algorithmic use remains application- or subscription-specific.
+- Relationship-based access remains an explicit access-policy mechanism rather than authority inherent in a social relationship.
