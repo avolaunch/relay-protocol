@@ -2,7 +2,7 @@
 
 ## Document status
 
-**Canonical editorial extraction**
+**Canonical editorial extraction — remediated following REM-05R-01**
 
 This document extracts protocol requirements from Sections 26–30 of `design-notes/05-relationship-model.md`.
 
@@ -220,83 +220,83 @@ Governance rules may determine how invitations, approvals or multi-party decisio
 
 ---
 
-## REM-05-291 — Formal-group model must support organisations
+## REM-05-291 — Organisation as a formal-group example
 
 **Source**  
 Section 27, examples: “organisation”.
 
 **Requirement**  
-The formal-group model SHOULD support organisations as formal groups.
+**Non-normative model example:** an organisation is listed as an example of a formal group.
 
 **Classification**  
-Group taxonomy; organisational modelling; recommendation.
+Non-normative example; group taxonomy; organisational modelling.
 
 **Notes**  
-The example identifies organisations as an intended formal-group use case.
+This entry preserves source traceability without imposing a `SHOULD` support obligation.
 
 ---
 
-## REM-05-292 — Formal-group model must support associations
+## REM-05-292 — Association as a formal-group example
 
 **Source**  
 Section 27, examples: “association”.
 
 **Requirement**  
-The formal-group model SHOULD support associations as formal groups.
+**Non-normative model example:** an association is listed as an example of a formal group.
 
 **Classification**  
-Group taxonomy; association modelling; recommendation.
+Non-normative example; group taxonomy; association modelling.
 
 **Notes**  
-An association may use governance and membership rules different from a company or informal team.
+This entry preserves source traceability without imposing a normative support obligation.
 
 ---
 
-## REM-05-293 — Formal-group model must support project teams
+## REM-05-293 — Project team as a formal-group example
 
 **Source**  
 Section 27, examples: “project team”.
 
 **Requirement**  
-The formal-group model SHOULD support project teams as formal groups.
+**Non-normative model example:** a project team is listed as an example of a formal group.
 
 **Classification**  
-Group taxonomy; project collaboration; recommendation.
+Non-normative example; group taxonomy; project collaboration.
 
 **Notes**  
-Project-team membership may be contextual and time-bound.
+This entry preserves source traceability without imposing a normative support obligation.
 
 ---
 
-## REM-05-294 — Formal-group model must support communities
+## REM-05-294 — Community as a formal-group example
 
 **Source**  
 Section 27, examples: “community”.
 
 **Requirement**  
-The formal-group model SHOULD support communities as formal groups.
+**Non-normative model example:** a community is listed as an example of a formal group.
 
 **Classification**  
-Group taxonomy; community modelling; recommendation.
+Non-normative example; group taxonomy; community modelling.
 
 **Notes**  
-Community governance may include moderators, membership rules and participation conditions.
+This entry preserves source traceability without imposing a normative support obligation.
 
 ---
 
-## REM-05-295 — Formal-group model must support cooperatives
+## REM-05-295 — Cooperative as a formal-group example
 
 **Source**  
 Section 27, examples: “cooperative”.
 
 **Requirement**  
-The formal-group model SHOULD support cooperatives as formal groups.
+**Non-normative model example:** a cooperative is listed as an example of a formal group.
 
 **Classification**  
-Group taxonomy; cooperative governance; recommendation.
+Non-normative example; group taxonomy; cooperative modelling.
 
 **Notes**  
-The model must not assume all formal groups use a single-controller governance structure.
+This entry preserves source traceability without imposing a normative support obligation.
 
 ---
 
@@ -1065,27 +1065,27 @@ The credential must remain valid under its own expiration and revocation rules a
 - Source content was limited to Sections 26–30 of `design-notes/05-relationship-model.md`.
 - Section 25 was used only to confirm the transition into personal and formal group models and was not re-extracted.
 - Section 31 and later content was excluded.
-- Examples were used only to clarify source meaning and were not promoted into universal requirements beyond the source language.
+- Section 27 examples are retained as explicitly non-normative traceability entries and are not promoted into protocol support obligations.
 
 ## Numbering verification
 
 - First requirement: `REM-05-279`.
 - Final requirement: `REM-05-342`.
 - Requirement numbering continues directly from Part 5.
-- Requirement identifiers are continuous, unique and ordered according to the source sections.
+- Requirement identifiers remain continuous, unique and ordered according to the source sections.
 
 ## Traceability verification
 
-- Every requirement contains **Source**, **Requirement**, **Classification** and **Notes**.
-- Every requirement is traceable to an explicit source sentence, list item, definition or necessary decomposition of a compound statement.
-- Personal-group uses, formal-membership conditions, membership-schema fields, request contents and target response options were extracted separately because each represents independently testable behaviour.
+- Every numbered entry contains **Source**, **Requirement**, **Classification** and **Notes**.
+- Every entry is traceable to an explicit source sentence, list item, definition or necessary decomposition of a compound statement.
+- Personal-group uses, formal-membership conditions, membership-schema fields, request contents and target response options remain separately traceable.
 
 ## Normative-language verification
 
 - Source “must” statements are represented using `MUST` or `MUST NOT`.
 - Source “should” statements are preserved as `SHOULD` recommendations.
 - Source “may” statements are preserved as `MAY` permissions or options.
-- Descriptive examples were converted to `SHOULD` only where they identify intended model support, and were not elevated to unconditional protocol validity rules.
+- Illustrative formal-group examples in REM-05-291 through REM-05-295 are explicitly non-normative.
 
 ## Editorial verification
 
