@@ -48,10 +48,10 @@ The source permits limited representations such as quoted text, thumbnails, prev
 Section 26, examples: “quoted text”.
 
 **Requirement**  
-An embedded representation MAY include quoted text from another object.
+**Non-normative model example.** An embedded representation is illustrated as containing quoted text from another object.
 
 **Classification**  
-Embedding; quotation; content representation.
+Non-normative model example; embedding; quotation; content representation.
 
 **Notes**  
 Where exact historical fidelity matters, the embed should be associated with the observed source version and observation time.
@@ -64,10 +64,10 @@ Where exact historical fidelity matters, the embed should be associated with the
 Section 26, examples: “thumbnail”.
 
 **Requirement**  
-An embedded representation MAY include a thumbnail associated with another object.
+**Non-normative model example.** An embedded representation is illustrated as containing a thumbnail associated with another object.
 
 **Classification**  
-Embedding; media preview.
+Non-normative model example; embedding; media preview.
 
 **Notes**  
 The thumbnail may be a historical preview and must not be assumed to reflect the current source object indefinitely.
@@ -80,10 +80,10 @@ The thumbnail may be a historical preview and must not be assumed to reflect the
 Section 26, examples: “preview title”.
 
 **Requirement**  
-An embedded representation MAY include a preview title associated with another object.
+**Non-normative model example.** An embedded representation is illustrated as containing a preview title associated with another object.
 
 **Classification**  
-Embedding; preview metadata.
+Non-normative model example; embedding; preview metadata.
 
 **Notes**  
 The preview title may preserve the value observed when the embed was created even if the source title later changes.
@@ -96,10 +96,10 @@ The preview title may preserve the value observed when the embed was created eve
 Section 26, examples: “author handle at time of publication”.
 
 **Requirement**  
-An embedded representation MAY preserve the author handle observed at the time of publication or embedding.
+**Non-normative model example.** An embedded representation is illustrated as preserving the author handle observed at the time of publication or embedding.
 
 **Classification**  
-Embedding; historical metadata; identity presentation.
+Non-normative model example; embedding; historical metadata; identity presentation.
 
 **Notes**  
 A historical handle is not necessarily the identity’s current handle and must not replace the stable Relay Identity identifier where identity verification is required.
@@ -128,10 +128,10 @@ Useful provenance may include the source Record URI, observed version and observ
 Section 26 example: `"source": "relay://..."`.
 
 **Requirement**  
-Where an embed derives from a Relay Record, its provenance SHOULD identify the source Record URI.
+**Non-normative model example.** The example embed provenance identifies the source Record URI.
 
 **Classification**  
-Provenance; referential integrity; recommendation.
+Non-normative model example; provenance; referential integrity.
 
 **Notes**  
 The example is informative, but identifying the source is necessary to make the provenance useful and auditable.
@@ -144,10 +144,10 @@ The example is informative, but identifying the source is necessary to make the 
 Section 26 example: `"observedVersion": 2`.
 
 **Requirement**  
-Where an embed represents a specific observed historical state, its provenance SHOULD identify the observed Record Version.
+**Non-normative model example.** The example embed provenance identifies the observed Record Version.
 
 **Classification**  
-Version provenance; embedding; recommendation.
+Non-normative model example; version provenance; embedding.
 
 **Notes**  
 Version identification prevents later source updates from being mistaken for the state originally embedded.
@@ -160,10 +160,10 @@ Version identification prevents later source updates from being mistaken for the
 Section 26 example: `"observedAt": "2026-08-24T10:00:00Z"`.
 
 **Requirement**  
-Embedded-content provenance SHOULD identify when the source state was observed.
+**Non-normative model example.** The example embed provenance identifies when the source state was observed.
 
 **Classification**  
-Temporal provenance; embedding; recommendation.
+Non-normative model example; temporal provenance; embedding.
 
 **Notes**  
 Observation time is especially useful where the embedded representation may diverge from the source’s later state.
@@ -438,10 +438,10 @@ Examples that may remain local include window size, dismissed-tooltip state, tem
 Section 29, examples: “window size”.
 
 **Requirement**  
-Application window-size state MAY remain local to the application.
+**Non-normative model example.** Window-size state illustrates application state that may remain local.
 
 **Classification**  
-Local state; user interface preference.
+Non-normative model example; local state; user interface preference.
 
 **Notes**  
 This example is illustrative of state that often has little portability or continuity value.
@@ -454,10 +454,10 @@ This example is illustrative of state that often has little portability or conti
 Section 29, examples: “dismissed tooltip state”.
 
 **Requirement**  
-Dismissed-tooltip state MAY remain local to the application.
+**Non-normative model example.** Dismissed-tooltip state illustrates application state that may remain local.
 
 **Classification**  
-Local state; user interface preference.
+Non-normative model example; local state; user interface preference.
 
 **Notes**  
 Such state generally concerns one application’s interface rather than the person’s portable digital record.
@@ -470,10 +470,10 @@ Such state generally concerns one application’s interface rather than the pers
 Section 29, examples: “temporary draft position”.
 
 **Requirement**  
-Temporary draft-position state MAY remain local to the application.
+**Non-normative model example.** Temporary draft-position state illustrates application state that may remain local.
 
 **Classification**  
-Local state; editing state.
+Non-normative model example; local state; editing state.
 
 **Notes**  
 This does not prevent a repository or schema from supporting portable drafts; it distinguishes transient editing position from canonical record content.
@@ -486,10 +486,10 @@ This does not prevent a repository or schema from supporting portable drafts; it
 Section 29, examples: “client-specific cache configuration”.
 
 **Requirement**  
-Client-specific cache configuration MAY remain local to the application.
+**Non-normative model example.** Client-specific cache configuration illustrates application state that may remain local.
 
 **Classification**  
-Local state; implementation detail.
+Non-normative model example; local state; implementation detail.
 
 **Notes**  
 Cache configuration is typically an application implementation concern rather than portable user-controlled state.

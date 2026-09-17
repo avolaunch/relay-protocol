@@ -90,19 +90,19 @@ The listed categories are broad semantic classes, not a closed enumeration of sc
 
 ---
 
-## REM-03-005 — Support for diverse record types
+## REM-03-005 — Illustrative examples of diverse record types
 
 **Source**  
 Section 1, examples: profile, post, article, project, photograph, comment, reaction, relationship declaration, application preference, credential, permission grant, moderation label and deletion marker.
 
 **Requirement**  
-The Relay Record Model MUST be capable of representing multiple categories of digital object, including content, activity, relationship, preference, credential, authority, moderation and deletion-related records.
+**Non-normative model example.** The source illustrates the breadth of objects a Relay Record may represent through examples including content, activity, relationship, preference, credential, authority, moderation and deletion-related records.
 
 **Classification**  
-Extensibility; data-model breadth; interoperability.
+Non-normative model example; extensibility; data-model breadth; interoperability.
 
 **Notes**  
-The examples are illustrative. Implementations must not interpret the list as limiting the protocol to those record types.
+The examples are illustrative, not a mandatory closed capability set. This entry is retained for traceability and does not receive ordinary normative treatment.
 
 ---
 
@@ -128,7 +128,7 @@ Record meaning and validity must derive from protocol metadata, schema and repos
 Section 1: “An application may create, edit or display a record, but the record belongs to the repository in which it was authorised.”
 
 **Requirement**  
-An application MAY create, edit or display a Relay Record only through valid protocol and repository-authorised operations, but such interaction MUST NOT establish application ownership of the record.
+An application MAY create, edit or display a Relay Record, but such interaction MUST NOT establish application ownership of the record.
 
 **Classification**  
 Application interaction; authority separation; ownership.
@@ -420,13 +420,13 @@ This requirement is derived directly from the source’s explicit two-layer mode
 Section 3: “The exact serialisation remains provisional.”
 
 **Requirement**  
-Relay v0.1 implementations MUST NOT treat the example serialisation in Section 3 as a final, fixed or exhaustive wire-format specification.
+**Non-normative specification-status note.** The Section 3 JSON is an illustrative conceptual serialisation; the exact serialisation remains provisional and is not a final, fixed or exhaustive wire-format specification.
 
 **Classification**  
-Specification status; implementation caution.
+Non-normative specification-status note; provisional serialisation; open design.
 
 **Notes**  
-The example demonstrates conceptual fields and nesting. It is informative rather than a final normative serialisation contract.
+This entry is retained for traceability and does not impose an ordinary normative prohibition.
 
 ---
 

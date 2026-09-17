@@ -194,13 +194,13 @@ Interoperability is achieved through safe handling and preservation, not mandato
 Section 42 example: “Fully supports com.relay.post.v1”.
 
 **Requirement**  
-An application MAY declare full support for a record schema that it can validate, interpret and operate on according to that schema.
+**Non-normative capability example.** The source illustrates an application stating that it fully supports a record schema.
 
 **Classification**  
-Capability declaration; schema support; interoperability.
+Non-normative capability example; capability declaration; schema support; interoperability.
 
 **Notes**  
-The example is illustrative and does not establish a final capability-advertisement syntax.
+The example is illustrative and does not establish a formal capability level, mandatory vocabulary or final capability-advertisement syntax.
 
 ---
 
@@ -210,13 +210,13 @@ The example is illustrative and does not establish a final capability-advertisem
 Section 42 example: “Read-only support for com.relay.article.v1”.
 
 **Requirement**  
-An application MAY declare read-only support for a schema where it can safely interpret records but does not support authorised modification operations.
+**Non-normative capability example.** The source illustrates an application stating that it has read-only support for a record schema.
 
 **Classification**  
-Capability declaration; read-only interoperability.
+Non-normative capability example; capability declaration; read-only interoperability.
 
 **Notes**  
-Read-only support must not be represented as full operational support.
+This is an illustrative statement, not a selected formal capability level or mandatory vocabulary.
 
 ---
 
@@ -226,13 +226,13 @@ Read-only support must not be represented as full operational support.
 Section 42 example: “Preserves but does not display com.example.design.canvas.v1”.
 
 **Requirement**  
-An application MAY preserve a valid record type without rendering or interpreting its schema-specific content.
+**Non-normative capability example.** The source illustrates an application stating that it preserves a record schema without displaying it.
 
 **Classification**  
-Forward compatibility; preservation; limited support.
+Non-normative capability example; forward compatibility; preservation; limited support.
 
 **Notes**  
-This permits safe passage of unknown record types through applications and migrations.
+This is an illustrative statement, not a selected formal capability level or mandatory vocabulary. The substantive preservation requirement remains in `REM-03-407`.
 
 ---
 
@@ -856,13 +856,13 @@ The source allows either rejection or explicit conflict treatment.
 Section 45, Concurrent update: “It does not silently overwrite version 2.”
 
 **Requirement**  
-The repository MUST NOT silently overwrite the current version with an update based on stale state.
+The repository SHOULD NOT silently overwrite the current version with an update based on stale state.
 
 **Classification**  
 Compliance scenario; data integrity; concurrency.
 
 **Notes**  
-This is the mandatory failure condition within the scenario.
+This retains the Section 45 scenario’s governing SHOULD framing. Independently sourced mandatory concurrency requirements remain elsewhere in the extraction.
 
 ---
 
@@ -904,7 +904,7 @@ Display does not transfer canonical control of the reply.
 Section 45, Reply from another identity: “Bob remains the controller of the reply record.”
 
 **Requirement**  
-The replying identity MUST remain the controller of the reply record even when another identity’s application displays it.
+The replying identity SHOULD remain the controller of the reply record even when another identity’s application displays it.
 
 **Classification**  
 Compliance scenario; ownership; repository authority.
@@ -936,7 +936,7 @@ The primary content may remain unchanged while the metadata change creates a new
 Section 45, Visibility change: “Future unauthorised access is refused.”
 
 **Requirement**  
-After a valid visibility restriction, the repository MUST refuse future access attempts that do not satisfy the applicable authority or audience rule.
+After a valid visibility restriction, the repository SHOULD refuse future access attempts that do not satisfy the applicable authority or audience rule.
 
 **Classification**  
 Compliance scenario; access control; visibility enforcement.
@@ -968,7 +968,7 @@ The exact retained verification metadata depends on the deletion mode and tombst
 Section 45, Deletion: “A tombstone prevents reuse of the Record URI...”
 
 **Requirement**  
-Deletion MUST leave sufficient tombstone state to prevent reuse or reassignment of the deleted Record URI.
+Deletion SHOULD leave sufficient tombstone state to prevent reuse or reassignment of the deleted Record URI.
 
 **Classification**  
 Compliance scenario; tombstone; identifier integrity.
@@ -984,7 +984,7 @@ This applies even when the active content has been erased.
 Section 45, Deletion: a tombstone “preserves minimum verification history.”
 
 **Requirement**  
-The tombstone MUST preserve the minimum verification history required to demonstrate the prior existence and authorised deletion of the logical record.
+The tombstone SHOULD preserve the minimum verification history required to demonstrate the prior existence and authorised deletion of the logical record.
 
 **Classification**  
 Compliance scenario; tombstone; historical integrity.

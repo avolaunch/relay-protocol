@@ -520,13 +520,13 @@ The source allows exceptional arrangements but establishes the replying identity
 Section 35 example: Bob’s reply contains `replyTo` referencing Alice’s post.
 
 **Requirement**  
-A reply record SHOULD identify the record to which it replies using the target’s stable Record URI or an equivalent schema-defined reference.
+**Non-normative model example.** The example reply representation identifies its target using the target’s stable Record URI in a `replyTo` field.
 
 **Classification**  
-Record references; reply semantics; interoperability.
+Non-normative model example; record references; reply semantics; interoperability.
 
 **Notes**  
-The `replyTo` field name is illustrative; the applicable schema defines the final field structure.
+The `replyTo` field name and representation are illustrative; the applicable schema defines the final field structure. This entry does not select a mandatory field vocabulary.
 
 ---
 

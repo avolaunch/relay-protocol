@@ -144,10 +144,10 @@ The source example includes view, redistribution, commercial use, model training
 Section 16, example rights declaration: `"view": "public"`.
 
 **Requirement**  
-A structured rights declaration MAY express terms governing viewing or access.
+**Non-normative model example.** The example rights declaration illustrates a term governing viewing or access.
 
 **Classification**  
-Rights metadata; access terms.
+Non-normative model example; rights metadata; access terms.
 
 **Notes**  
 This rights expression remains distinct from the record’s protocol visibility classification.
@@ -160,10 +160,10 @@ This rights expression remains distinct from the record’s protocol visibility 
 Section 16, example rights declaration: `"redistribution": "attribution-required"`.
 
 **Requirement**  
-A structured rights declaration MAY express terms governing redistribution or syndication.
+**Non-normative model example.** The example rights declaration illustrates a term governing redistribution or syndication.
 
 **Classification**  
-Rights metadata; redistribution; licensing.
+Non-normative model example; rights metadata; redistribution; licensing.
 
 **Notes**  
 Terms may include conditions such as attribution, permission or prohibition.
@@ -176,10 +176,10 @@ Terms may include conditions such as attribution, permission or prohibition.
 Section 16, example rights declaration: `"commercialUse": "prohibited"`.
 
 **Requirement**  
-A structured rights declaration MAY express terms governing commercial use.
+**Non-normative model example.** The example rights declaration illustrates a term governing commercial use.
 
 **Classification**  
-Rights metadata; commercial licensing.
+Non-normative model example; rights metadata; commercial licensing.
 
 **Notes**  
 The protocol can represent the declared term but does not itself guarantee external enforcement.
@@ -192,10 +192,10 @@ The protocol can represent the declared term but does not itself guarantee exter
 Section 16, example rights declaration: `"modelTraining": "prohibited"`.
 
 **Requirement**  
-A structured rights declaration MAY express terms governing use of the record for model training.
+**Non-normative model example.** The example rights declaration illustrates a term governing use of the record for model training.
 
 **Classification**  
-Rights metadata; artificial intelligence; licensing.
+Non-normative model example; rights metadata; artificial intelligence; licensing.
 
 **Notes**  
 The declaration expresses the controller’s or rights holder’s term; compliance may depend on external enforcement mechanisms.
@@ -208,10 +208,10 @@ The declaration expresses the controller’s or rights holder’s term; complian
 Section 16, example rights declaration: `"derivatives": "permission-required"`.
 
 **Requirement**  
-A structured rights declaration MAY express terms governing modification or derivative works.
+**Non-normative model example.** The example rights declaration illustrates a term governing modification or derivative works.
 
 **Classification**  
-Rights metadata; modification; derivative works.
+Non-normative model example; rights metadata; modification; derivative works.
 
 **Notes**  
 The final vocabulary and enforceability model are not fixed by the example.
@@ -500,10 +500,10 @@ Envelope validation is distinct from validating schema-defined content or applic
 Section 18.1, example: “valid URI”.
 
 **Requirement**  
-Envelope validation SHOULD verify that protocol URIs used by the record are valid.
+**Non-normative validation example.** Envelope validation is illustrated as checking whether protocol URIs used by the record are valid.
 
 **Classification**  
-Envelope validation; addressing.
+Non-normative validation example; envelope validation; addressing.
 
 **Notes**  
 The source lists this as an example of envelope validation rather than a complete validation algorithm.
@@ -516,10 +516,10 @@ The source lists this as an example of envelope validation rather than a complet
 Section 18.1, example: “valid identifier”.
 
 **Requirement**  
-Envelope validation SHOULD verify that required protocol identifiers are valid.
+**Non-normative validation example.** Envelope validation is illustrated as checking whether required protocol identifiers are valid.
 
 **Classification**  
-Envelope validation; identifier integrity.
+Non-normative validation example; envelope validation; identifier integrity.
 
 **Notes**  
 This may include repository, identity, collection or record identifiers as applicable.
@@ -532,10 +532,10 @@ This may include repository, identity, collection or record identifiers as appli
 Section 18.1, example: “required metadata”.
 
 **Requirement**  
-Envelope validation SHOULD verify that all required protocol metadata is present or validly inherited.
+**Non-normative validation example.** Envelope validation is illustrated as checking whether required protocol metadata is present or validly inherited.
 
 **Classification**  
-Envelope validation; metadata completeness.
+Non-normative validation example; envelope validation; metadata completeness.
 
 **Notes**  
 The common required envelope information is defined earlier in the source model.
@@ -548,10 +548,10 @@ The common required envelope information is defined earlier in the source model.
 Section 18.1, example: “supported encoding”.
 
 **Requirement**  
-Envelope validation SHOULD verify that the record uses a supported encoding.
+**Non-normative validation example.** Envelope validation is illustrated as checking whether the record uses a supported encoding.
 
 **Classification**  
-Envelope validation; serialisation; interoperability.
+Non-normative validation example; envelope validation; serialisation; interoperability.
 
 **Notes**  
 The final serialisation and encoding set remain subject to the broader protocol specification.
@@ -564,10 +564,10 @@ The final serialisation and encoding set remain subject to the broader protocol 
 Section 18.1, example: “valid timestamp”.
 
 **Requirement**  
-Envelope validation SHOULD verify that required timestamps are valid.
+**Non-normative validation example.** Envelope validation is illustrated as checking whether required timestamps are valid.
 
 **Classification**  
-Envelope validation; temporal metadata.
+Non-normative validation example; envelope validation; temporal metadata.
 
 **Notes**  
 Validity may include format, parseability and compliance with protocol timestamp rules.
@@ -596,10 +596,10 @@ The declared schema, not the creating application’s private assumptions, gover
 Section 18.2, example: “required fields”.
 
 **Requirement**  
-Schema validation SHOULD verify the presence of all required schema fields.
+**Non-normative validation example.** Schema validation is illustrated as checking for required schema fields.
 
 **Classification**  
-Schema validation; field completeness.
+Non-normative validation example; schema validation; field completeness.
 
 **Notes**  
 Missing required fields should cause schema validation failure.
@@ -612,10 +612,10 @@ Missing required fields should cause schema validation failure.
 Section 18.2, example: “value types”.
 
 **Requirement**  
-Schema validation SHOULD verify that field values conform to their declared types.
+**Non-normative validation example.** Schema validation is illustrated as checking whether field values conform to their declared types.
 
 **Classification**  
-Schema validation; type safety.
+Non-normative validation example; schema validation; type safety.
 
 **Notes**  
 Type checking may apply to primitive, structured and reference values.
@@ -628,10 +628,10 @@ Type checking may apply to primitive, structured and reference values.
 Section 18.2, example: “permitted lengths”.
 
 **Requirement**  
-Schema validation SHOULD verify compliance with permitted field or content lengths.
+**Non-normative validation example.** Schema validation is illustrated as checking permitted field or content lengths.
 
 **Classification**  
-Schema validation; constraint enforcement.
+Non-normative validation example; schema validation; constraint enforcement.
 
 **Notes**  
 Length rules must derive from the applicable schema.
@@ -644,10 +644,10 @@ Length rules must derive from the applicable schema.
 Section 18.2, example: “allowed references”.
 
 **Requirement**  
-Schema validation SHOULD verify that record references are permitted by the declared schema.
+**Non-normative validation example.** Schema validation is illustrated as checking whether record references are permitted by the declared schema.
 
 **Classification**  
-Schema validation; referential constraints.
+Non-normative validation example; schema validation; referential constraints.
 
 **Notes**  
 This may include allowed reference types, targets or cardinality.
@@ -676,10 +676,10 @@ A structurally valid record must still fail if the operation lacks valid authori
 Section 18.3, example: “valid controller signature”.
 
 **Requirement**  
-Authority validation SHOULD verify any controller signature required for the operation.
+**Non-normative validation example.** Authority validation is illustrated as checking any controller signature required for the operation.
 
 **Classification**  
-Authority validation; signature verification.
+Non-normative validation example; authority validation; signature verification.
 
 **Notes**  
 The applicable operation or authorisation model determines whether a controller signature is required.
@@ -692,10 +692,10 @@ The applicable operation or authorisation model determines whether a controller 
 Section 18.3, example: “valid delegated application grant”.
 
 **Requirement**  
-Authority validation SHOULD verify any delegated application grant relied upon by the submitter.
+**Non-normative validation example.** Authority validation is illustrated as checking any delegated application grant relied upon by the submitter.
 
 **Classification**  
-Authority validation; delegation; application permissions.
+Non-normative validation example; authority validation; delegation; application permissions.
 
 **Notes**  
 The grant must be valid for the submitting application and requested operation.
@@ -708,10 +708,10 @@ The grant must be valid for the submitting application and requested operation.
 Section 18.3, example: “non-revoked key”.
 
 **Requirement**  
-Authority validation SHOULD verify that a signing or authorising key used for the operation has not been revoked.
+**Non-normative validation example.** Authority validation is illustrated as checking that a signing or authorising key has not been revoked.
 
 **Classification**  
-Authority validation; key management; security.
+Non-normative validation example; authority validation; key management; security.
 
 **Notes**  
 A cryptographically correct signature from a revoked key must not be treated as currently authorised.
@@ -724,10 +724,10 @@ A cryptographically correct signature from a revoked key must not be treated as 
 Section 18.3, example: “operation within scope”.
 
 **Requirement**  
-Authority validation SHOULD verify that the requested operation falls within the scope of the applicable authority or grant.
+**Non-normative validation example.** Authority validation is illustrated as checking whether the requested operation falls within the scope of the applicable authority or grant.
 
 **Classification**  
-Authority validation; scope enforcement; least privilege.
+Non-normative validation example; authority validation; scope enforcement; least privilege.
 
 **Notes**  
 A valid grant for one operation or collection must not automatically authorise unrelated operations.
@@ -756,10 +756,10 @@ This validation prevents operations that are structurally valid but inconsistent
 Section 18.4, example: “Record Key does not already exist”.
 
 **Requirement**  
-Repository-state validation SHOULD verify that a newly created Record Key has not already been used in the applicable scope.
+**Non-normative validation example.** Repository-state validation is illustrated as checking whether a newly created Record Key has already been used in the applicable scope.
 
 **Classification**  
-Repository-state validation; uniqueness.
+Non-normative validation example; repository-state validation; uniqueness.
 
 **Notes**  
 Later deletion rules may preserve used identifiers through tombstones, but those rules are outside this part.
@@ -772,10 +772,10 @@ Later deletion rules may preserve used identifiers through tombstones, but those
 Section 18.4, example: “version being updated is current”.
 
 **Requirement**  
-Repository-state validation SHOULD verify that the version targeted by an update is the current version expected by the operation.
+**Non-normative validation example.** Repository-state validation is illustrated as checking whether the version targeted by an update is the current version expected by the operation.
 
 **Classification**  
-Repository-state validation; concurrency; versioning.
+Non-normative validation example; repository-state validation; concurrency; versioning.
 
 **Notes**  
 This supports optimistic concurrency and prevents silent overwriting.
@@ -788,10 +788,10 @@ This supports optimistic concurrency and prevents silent overwriting.
 Section 18.4, example: “referenced commit is valid”.
 
 **Requirement**  
-Repository-state validation SHOULD verify that any referenced repository commit is valid.
+**Non-normative validation example.** Repository-state validation is illustrated as checking whether a referenced repository commit is valid.
 
 **Classification**  
-Repository-state validation; commit integrity.
+Non-normative validation example; repository-state validation; commit integrity.
 
 **Notes**  
 Validity may include existence, repository membership and consistency with the operation’s expected state.
@@ -804,10 +804,10 @@ Validity may include existence, repository membership and consistency with the o
 Section 18.4, example: “singleton constraints are respected”.
 
 **Requirement**  
-Repository-state validation SHOULD verify compliance with applicable singleton constraints.
+**Non-normative validation example.** Repository-state validation is illustrated as checking compliance with applicable singleton constraints.
 
 **Classification**  
-Repository-state validation; cardinality; schema behaviour.
+Non-normative validation example; repository-state validation; cardinality; schema behaviour.
 
 **Notes**  
 An operation must not create a second competing current singleton record where the schema permits only one.
@@ -836,10 +836,10 @@ These checks are optional and application-specific unless separately required by
 Section 18.5, example: “whether a URL is reachable”.
 
 **Requirement**  
-An application MAY check whether a referenced URL is reachable.
+**Non-normative validation example.** Application semantic validation is illustrated as checking whether a referenced URL is reachable.
 
 **Classification**  
-Semantic validation; application behaviour.
+Non-normative validation example; semantic validation; application behaviour.
 
 **Notes**  
 URL reachability is not equivalent to protocol validity and may change over time.
@@ -852,10 +852,10 @@ URL reachability is not equivalent to protocol validity and may change over time
 Section 18.5, example: “whether a media file is suitable”.
 
 **Requirement**  
-An application MAY check whether an associated media file is suitable for its intended context.
+**Non-normative validation example.** Application semantic validation is illustrated as checking whether an associated media file is suitable for its intended context.
 
 **Classification**  
-Semantic validation; media policy; application behaviour.
+Non-normative validation example; semantic validation; media policy; application behaviour.
 
 **Notes**  
 Suitability criteria may differ between applications without changing protocol validity.
@@ -868,10 +868,10 @@ Suitability criteria may differ between applications without changing protocol v
 Section 18.5, example: “whether text violates community policy”.
 
 **Requirement**  
-An application MAY check whether record content violates its community policy.
+**Non-normative validation example.** Application semantic validation is illustrated as checking whether record content violates community policy.
 
 **Classification**  
-Semantic validation; moderation; application policy.
+Non-normative validation example; semantic validation; moderation; application policy.
 
 **Notes**  
 A community-policy decision is not itself a protocol-structure or authority-validity decision.

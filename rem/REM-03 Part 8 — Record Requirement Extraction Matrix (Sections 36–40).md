@@ -64,10 +64,10 @@ The identity controlling the target content does not thereby own reactions made 
 Section 36 example containing a `subject` Record URI.
 
 **Requirement**  
-A reaction record SHOULD identify the record or object to which the reaction applies using an explicit protocol reference.
+**Non-normative model example.** The example reaction representation identifies the target using a `subject` Record URI.
 
 **Classification**  
-Referential structure; reaction semantics; recommendation.
+Non-normative model example; referential structure; reaction semantics.
 
 **Notes**  
 The example uses the `subject` field, but the exact schema field name remains schema-defined.
@@ -80,10 +80,10 @@ The example uses the `subject` field, but the exact schema field name remains sc
 Section 36 example containing `"reaction": "like"`.
 
 **Requirement**  
-A reaction record SHOULD declare the reaction type or value applied to its target.
+**Non-normative model example.** The example reaction representation declares a reaction value using `"reaction": "like"`.
 
 **Classification**  
-Schema content; semantic interoperability; recommendation.
+Non-normative model example; schema content; semantic interoperability.
 
 **Notes**  
 The permitted reaction vocabulary is determined by the applicable schema.
@@ -178,10 +178,10 @@ The repost is a distinct logical record whose meaning depends on its reference t
 Section 37 example containing a source `subject` and a `comment`.
 
 **Requirement**  
-A repost schema MAY permit the reposter to attach commentary or other schema-defined content to the source reference.
+**Non-normative model example.** The example repost representation includes reposter commentary alongside a source `subject` reference.
 
 **Classification**  
-Schema behaviour; repost content; extensibility.
+Non-normative model example; schema behaviour; repost content; extensibility.
 
 **Notes**  
 The commentary belongs to the repost record and does not modify the original source record.
@@ -244,10 +244,10 @@ Separate representation preserves the distinction between original content and a
 Section 38 example containing an `issuer`.
 
 **Requirement**  
-A moderation-label record SHOULD identify the identity or service that issued the label.
+**Non-normative model example.** The example moderation-label representation identifies the issuer.
 
 **Classification**  
-Issuer accountability; moderation provenance; recommendation.
+Non-normative model example; issuer accountability; moderation provenance.
 
 **Notes**  
 Applications require issuer identity in order to choose which label providers they trust.
@@ -260,10 +260,10 @@ Applications require issuer identity in order to choose which label providers th
 Section 38 example containing a target `subject` Record URI.
 
 **Requirement**  
-A moderation-label record SHOULD identify the record or object to which the moderation decision applies.
+**Non-normative model example.** The example moderation-label representation identifies its target using a `subject` Record URI.
 
 **Classification**  
-Referential structure; moderation semantics; recommendation.
+Non-normative model example; referential structure; moderation semantics.
 
 **Notes**  
 The label record and target record remain separately addressable objects.
@@ -276,10 +276,10 @@ The label record and target record remain separately addressable objects.
 Section 38 example containing `"label": "graphic-content"`.
 
 **Requirement**  
-A moderation-label record SHOULD declare the moderation label or decision assigned to the target.
+**Non-normative model example.** The example moderation-label representation declares a label value using `"label": "graphic-content"`.
 
 **Classification**  
-Schema content; moderation interoperability; recommendation.
+Non-normative model example; schema content; moderation interoperability.
 
 **Notes**  
 The permitted label vocabulary and semantics are schema-defined.
@@ -292,10 +292,10 @@ The permitted label vocabulary and semantics are schema-defined.
 Section 38 example containing `issuedAt`.
 
 **Requirement**  
-A moderation-label record SHOULD identify when the label was issued.
+**Non-normative model example.** The example moderation-label representation identifies an issuance time using `issuedAt`.
 
 **Classification**  
-Temporal metadata; moderation provenance; recommendation.
+Non-normative model example; temporal metadata; moderation provenance.
 
 **Notes**  
 Time information supports auditability, expiration and policy evaluation.

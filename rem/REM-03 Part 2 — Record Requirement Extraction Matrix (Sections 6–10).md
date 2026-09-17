@@ -160,13 +160,13 @@ An implementation must not silently treat the base Record URI as though it were 
 Section 6.1: “The exact version-reference syntax remains open.”
 
 **Requirement**  
-Relay v0.1 implementations MUST NOT treat the example `?version=3` syntax as a final or exclusive version-reference format.
+**Non-normative open-design note.** The example `?version=3` form illustrates the distinction between logical and version identity; the exact version-reference syntax remains open and is not a final or exclusive format.
 
 **Classification**  
-Specification status; implementation caution.
+Non-normative open-design note; specification status; version-reference syntax.
 
 **Notes**  
-The example expresses the conceptual distinction between logical and version identity, not a final wire-format decision.
+This entry is retained for traceability and does not impose an ordinary normative prohibition.
 
 ---
 
