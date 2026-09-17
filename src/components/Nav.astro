@@ -1,0 +1,23 @@
+---
+const GITHUB_REPOSITORY_URL = 'https://github.com/avolaunch/relay-protocol';
+---
+
+<header class="site-nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">relay-protocol</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#top">Relay</a></li>
+        <li><a href="#principles">Principles</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#development">Development</a></li>
+        <li><a href={GITHUB_REPOSITORY_URL} target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+.site-nav{position:sticky;top:0;z-index:10;background:rgba(11,13,16,.9);backdrop-filter:blur(6px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem 1.5rem;padding-block:1rem}.brand{font-family:var(--font-mono);font-size:.9375rem;color:var(--text);text-decoration:none;letter-spacing:-.01em}.brand:hover{color:var(--accent-strong)}.nav-links{display:flex;flex-wrap:wrap;gap:1.25rem;list-style:none}.nav-links a{font-family:var(--font-mono);font-size:.875rem;color:var(--text-dim);text-decoration:none;white-space:nowrap}.nav-links a:hover{color:var(--accent-strong)}@media(max-width:30rem){.nav-links{gap:1rem;font-size:.8125rem}}
+</style>
