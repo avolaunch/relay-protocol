@@ -127,6 +127,16 @@ Both review findings are resolved. Focused verification confirms:
 
 EA-05R-03 is complete. Canonical assembly remains gated by founder disposition of the Section 46 open questions and Section 47 provisional decisions.
 
+## Founder disposition
+
+The founder approved the following carry-forward treatment:
+
+- REM-03-456 through REM-03-465 remain explicit non-normative open design questions for later resolution;
+- REL-REC-295 through REL-REC-311 remain **PROVISIONAL v0.1** requirements; and
+- neither group prevents assembly of the reviewed catalogue as canonical v1.0, provided both statuses remain explicit.
+
+The canonical catalogue must not present the Section 46 questions as resolved or remove the provisional marker from any Section 47 requirement without a later documented decision.
+
 ---
 
 # 7. Remediation verification checklist
