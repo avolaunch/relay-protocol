@@ -6,7 +6,7 @@
 
 **Review Target:** EA-05-03 Parts 1–45
 
-**Status:** Review Complete — Remediation Required
+**Status:** Complete
 
 ---
 
@@ -49,8 +49,8 @@ The authoritative design source remains `design-notes/03-record-model.md`.
 | Canonical terminology | Pass with note | No deprecated capitalised protocol term from EA-04 was adopted as a replacement definition |
 | Provisional-status preservation | Pass | All 17 Section 47 requirements remain marked PROVISIONAL v0.1 |
 | Open-question preservation | Pass | REM-03-456 through REM-03-465 remain non-normative and generate no REL-REC identifiers |
-| Related-invariant linkage | Remediation required | All 174 requirements in Parts 23–45 currently state “None identified”, including requirements with direct EA-03 relationships |
-| Statement keyword formatting | Remediation required | 166 statements in Parts 23–44 do not bold the operative normative keyword consistently with Parts 1–22 |
+| Related-invariant linkage | Pass after remediation | 103 requirements in Parts 23–45 now cite directly applicable EA-03 invariants; 71 retain an explicit “None identified” result |
+| Statement keyword formatting | Pass after remediation | All operative normative keywords now follow the established statement formatting |
 
 ---
 
@@ -71,6 +71,10 @@ Every generated requirement in Parts 23–45 currently records `None identified.
 - Retain `None identified.` where no direct invariant relationship exists.
 - Do not create new invariant identifiers or broaden requirement statements.
 
+### Resolution
+
+**Resolved.** REL-REC-140 through REL-REC-313 were cross-checked against EA-03. Direct invariant relationships were added to 103 requirements. The remaining 71 requirements retain `None identified.` where no sufficiently direct invariant relationship was established.
+
 ---
 
 ## EA-05R-03-F02 — Inconsistent normative-keyword emphasis
@@ -85,6 +89,10 @@ The requirements declare the correct normative keyword, but most statements gene
 
 - Bold the operative `MUST`, `MUST NOT`, `SHOULD`, `SHOULD NOT` or `MAY` in each affected statement.
 - Do not change wording, strength or qualifications.
+
+### Resolution
+
+**Resolved.** All 166 affected statements now bold their operative normative keyword. No statement wording, strength or qualification changed.
 
 ---
 
@@ -106,33 +114,35 @@ The catalogue decomposes source entries where distinct positive and prohibitory 
 
 # 6. Review verdict
 
-EA-05-03 is complete in source coverage, REM accounting and identifier continuity, but it is not yet ready for canonical assembly.
+EA-05-03 passes the completed subsystem-level editorial review.
 
-The catalogue must first resolve EA-05R-03-F01 and EA-05R-03-F02 and then undergo a focused remediation verification.
+Both review findings are resolved. Focused verification confirms:
 
-Following successful verification:
+- REL-REC-001 through REL-REC-313 remain continuous and unique;
+- REM-03-001 through REM-03-483 remain completely and uniquely accounted for;
+- all affected normative keywords use established formatting;
+- applicable EA-03 invariant relationships are recorded;
+- Section 46 entries remain non-normative; and
+- all 17 Section 47 requirements remain **PROVISIONAL v0.1**.
 
-1. EA-05R-03 may be marked complete;
-2. Section 46 founder decisions and Section 47 provisional decisions may be processed;
-3. the approved parts may be assembled into the canonical Record Requirements Catalogue; and
-4. `editorial/MASTER_INDEX.md` may be updated.
+EA-05R-03 is complete. Canonical assembly remains gated by founder disposition of the Section 46 open questions and Section 47 provisional decisions.
 
 ---
 
 # 7. Remediation verification checklist
 
-- [ ] Every requirement in Parts 23–45 has been cross-checked against EA-03.
-- [ ] Applicable CI and AI references have been added without inventing relationships.
-- [ ] Legitimate `None identified.` entries remain explicit.
-- [ ] All 166 affected statements use established bold normative-keyword formatting.
-- [ ] No requirement statement or normative strength changed during formatting remediation.
-- [ ] REL-REC-001 through REL-REC-313 remain continuous and unique.
-- [ ] REM-03-001 through REM-03-483 remain completely and uniquely accounted for.
-- [ ] Section 46 entries remain non-normative.
-- [ ] Section 47 requirements remain PROVISIONAL v0.1.
+- [x] Every requirement in Parts 23–45 has been cross-checked against EA-03.
+- [x] Applicable CI and AI references have been added without inventing relationships.
+- [x] Legitimate `None identified.` entries remain explicit.
+- [x] All 166 affected statements use established bold normative-keyword formatting.
+- [x] No requirement statement or normative strength changed during formatting remediation.
+- [x] REL-REC-001 through REL-REC-313 remain continuous and unique.
+- [x] REM-03-001 through REM-03-483 remain completely and uniquely accounted for.
+- [x] Section 46 entries remain non-normative.
+- [x] Section 47 requirements remain PROVISIONAL v0.1.
 
 ---
 
 # Document status
 
-**Review Complete — Remediation Required**
+**Complete**
