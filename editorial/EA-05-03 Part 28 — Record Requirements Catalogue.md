@@ -42,7 +42,7 @@ Custom record-type definition
 
 ### Statement
 
-An application MAY define a custom Relay record type.
+An application **MAY** define a custom Relay record type.
 
 ### Rationale
 
@@ -71,7 +71,7 @@ Portable custom records
 
 ### Statement
 
-A custom record SHOULD remain portable even where only one application currently implements or understands its schema.
+A custom record **SHOULD** remain portable even where only one application currently implements or understands its schema.
 
 ### Rationale
 
@@ -84,7 +84,7 @@ Limited ecosystem support does not justify binding the record permanently to the
 
 ### Related Invariants
 
-None identified.
+- CI-03
 
 ---
 
@@ -100,7 +100,7 @@ Preservation without rendering
 
 ### Statement
 
-An application MAY preserve an unsupported custom record without rendering its schema-defined content.
+An application **MAY** preserve an unsupported custom record without rendering its schema-defined content.
 
 ### Rationale
 
@@ -129,7 +129,7 @@ Limited metadata rendering
 
 ### Statement
 
-An application MAY render only the protocol-level or otherwise understood metadata of a custom record whose full schema it does not implement.
+An application **MAY** render only the protocol-level or otherwise understood metadata of a custom record whose full schema it does not implement.
 
 ### Rationale
 
@@ -158,7 +158,7 @@ Interpretation after schema implementation
 
 ### Statement
 
-An application MAY interpret a custom record after implementing the applicable schema.
+An application **MAY** interpret a custom record after implementing the applicable schema.
 
 ### Rationale
 
@@ -187,7 +187,7 @@ Permissioned transformation of custom records
 
 ### Statement
 
-An application MAY transform a custom record into another schema only where the required permission has been obtained.
+An application **MAY** transform a custom record into another schema only where the required permission has been obtained.
 
 ### Rationale
 
@@ -216,7 +216,7 @@ Prohibition on anti-competitive obscurity
 
 ### Statement
 
-The originating application MUST NOT encrypt, encode or otherwise obscure a record solely to prevent competing clients from using, preserving or interpreting it.
+The originating application **MUST NOT** encrypt, encode or otherwise obscure a record solely to prevent competing clients from using, preserving or interpreting it.
 
 ### Rationale
 
@@ -229,7 +229,7 @@ This prohibition targets deliberate competitive exclusion rather than legitimate
 
 ### Related Invariants
 
-None identified.
+- CI-04
 
 ---
 
@@ -245,7 +245,7 @@ Security-based encryption exception
 
 ### Statement
 
-An originating application MAY encrypt or obscure record content where that protection is genuinely required for user security.
+An originating application **MAY** encrypt or obscure record content where that protection is genuinely required for user security.
 
 ### Rationale
 

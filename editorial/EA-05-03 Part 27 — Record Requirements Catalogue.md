@@ -42,7 +42,7 @@ Local draft creation before acceptance
 
 ### Statement
 
-Applications MAY create local draft records before repository acceptance.
+Applications **MAY** create local draft records before repository acceptance.
 
 ### Rationale
 
@@ -71,7 +71,7 @@ Draft non-canonicity before commit
 
 ### Statement
 
-A draft MUST NOT be treated as canonical until it has been included in an accepted repository commit.
+A draft **MUST NOT** be treated as canonical until it has been included in an accepted repository commit.
 
 ### Rationale
 
@@ -84,7 +84,8 @@ Local persistence or application synchronisation alone does not establish canoni
 
 ### Related Invariants
 
-None identified.
+- CI-07
+- AI-02
 
 ---
 
@@ -100,7 +101,7 @@ Optional private repository drafts
 
 ### Statement
 
-A Relay Repository MAY support private draft records.
+A Relay Repository **MAY** support private draft records.
 
 ### Rationale
 
@@ -129,7 +130,7 @@ Draft incompleteness indication
 
 ### Statement
 
-A draft SHOULD clearly indicate that it is incomplete.
+A draft **SHOULD** clearly indicate that it is incomplete.
 
 ### Rationale
 
@@ -158,7 +159,7 @@ Draft synchronisation indication
 
 ### Statement
 
-A draft SHOULD clearly indicate whether it has been synchronised.
+A draft **SHOULD** clearly indicate whether it has been synchronised.
 
 ### Rationale
 
@@ -187,7 +188,7 @@ Draft creating-application indication
 
 ### Statement
 
-A draft SHOULD identify the application that created it.
+A draft **SHOULD** identify the application that created it.
 
 ### Rationale
 
@@ -216,7 +217,7 @@ Cross-application draft-editability indication
 
 ### Statement
 
-A draft SHOULD clearly indicate whether another application is permitted to edit it.
+A draft **SHOULD** clearly indicate whether another application is permitted to edit it.
 
 ### Rationale
 
@@ -245,7 +246,7 @@ No false canonical-storage representation
 
 ### Statement
 
-Applications MUST NOT present unsynchronised local drafts as safely stored canonical Relay Records.
+Applications **MUST NOT** present unsynchronised local drafts as safely stored canonical Relay Records.
 
 ### Rationale
 
@@ -258,7 +259,7 @@ Applications must accurately distinguish local-only state from repository-accept
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 

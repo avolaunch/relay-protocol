@@ -42,7 +42,7 @@ Preservation of Record URI during portability
 
 ### Statement
 
-A compliant receiving provider MUST preserve the Record URI of a portable record.
+A compliant receiving provider **MUST** preserve the Record URI of a portable record.
 
 ### Rationale
 
@@ -55,7 +55,8 @@ Migration must not assign a new logical identity merely because the serving prov
 
 ### Related Invariants
 
-None identified.
+- CI-05
+- CI-03
 
 ---
 
@@ -71,7 +72,7 @@ Preservation of collection and schema
 
 ### Statement
 
-A compliant receiving provider MUST preserve the record’s collection association and schema identifier during migration.
+A compliant receiving provider **MUST** preserve the record’s collection association and schema identifier during migration.
 
 ### Rationale
 
@@ -84,7 +85,8 @@ Preserving content without its collection and schema context would remove operat
 
 ### Related Invariants
 
-None identified.
+- CI-03
+- AI-04
 
 ---
 
@@ -100,7 +102,7 @@ Envelope validation after migration
 
 ### Statement
 
-A portable record MUST remain capable of passing applicable Record Envelope validation at the receiving compliant provider.
+A portable record **MUST** remain capable of passing applicable Record Envelope validation at the receiving compliant provider.
 
 ### Rationale
 
@@ -113,7 +115,7 @@ Migration must preserve the protocol-level metadata and context necessary for va
 
 ### Related Invariants
 
-None identified.
+- CI-03
 
 ---
 
@@ -129,7 +131,7 @@ Preservation of record content
 
 ### Statement
 
-A compliant receiving provider MUST preserve the record’s schema-defined content during migration.
+A compliant receiving provider **MUST** preserve the record’s schema-defined content during migration.
 
 ### Rationale
 
@@ -142,7 +144,8 @@ Any deliberate transformation belongs to a separately authorised translation or 
 
 ### Related Invariants
 
-None identified.
+- CI-03
+- AI-04
 
 ---
 
@@ -158,7 +161,7 @@ Preservation of blob references
 
 ### Statement
 
-A compliant receiving provider MUST preserve the record’s blob references during migration.
+A compliant receiving provider **MUST** preserve the record’s blob references during migration.
 
 ### Rationale
 
@@ -171,7 +174,8 @@ The storage location may change, but the stable blob identity and relationship t
 
 ### Related Invariants
 
-None identified.
+- CI-03
+- AI-04
 
 ---
 
@@ -187,7 +191,7 @@ Preservation of version history
 
 ### Statement
 
-A compliant receiving provider MUST preserve the record’s version history during migration.
+A compliant receiving provider **MUST** preserve the record’s version history during migration.
 
 ### Rationale
 
@@ -200,7 +204,9 @@ Portability is not satisfied by retaining only the latest visible payload where 
 
 ### Related Invariants
 
-None identified.
+- CI-03
+- AI-04
+- CI-10
 
 ---
 
@@ -216,7 +222,7 @@ Preservation of unknown extensions
 
 ### Statement
 
-A compliant receiving provider MUST preserve valid extensions that it does not understand.
+A compliant receiving provider **MUST** preserve valid extensions that it does not understand.
 
 ### Rationale
 
@@ -229,7 +235,7 @@ Lack of local interpretation is not permission to strip unknown but valid extens
 
 ### Related Invariants
 
-None identified.
+- CI-03
 
 ---
 
@@ -245,7 +251,7 @@ Continued visibility-rule enforcement
 
 ### Statement
 
-A compliant receiving provider MUST continue serving a migrated record in accordance with its applicable visibility rules.
+A compliant receiving provider **MUST** continue serving a migrated record in accordance with its applicable visibility rules.
 
 ### Rationale
 
@@ -258,7 +264,8 @@ Migration must not silently make restricted or private content public, or make p
 
 ### Related Invariants
 
-None identified.
+- CI-03
+- AI-07
 
 ---
 
@@ -274,7 +281,7 @@ Operational meaning required for portability
 
 ### Statement
 
-A migration MUST NOT be considered Relay-portable if it merely converts records into flat files while losing the protocol metadata, relationships, validation context or operational meaning required by the Record Model.
+A migration **MUST NOT** be considered Relay-portable if it merely converts records into flat files while losing the protocol metadata, relationships, validation context or operational meaning required by the Record Model.
 
 ### Rationale
 
@@ -287,7 +294,8 @@ Exportability alone is not sufficient. The receiving environment must be able to
 
 ### Related Invariants
 
-None identified.
+- CI-03
+- AI-04
 
 ---
 

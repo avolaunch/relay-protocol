@@ -42,7 +42,7 @@ Ordered-item support
 
 ### Statement
 
-The Relay Record Model MUST support schemas for records containing ordered items.
+The Relay Record Model **MUST** support schemas for records containing ordered items.
 
 ### Rationale
 
@@ -71,7 +71,7 @@ Schema-defined ordering model
 
 ### Statement
 
-A schema governing ordered items MUST define how ordering is represented or derived.
+A schema governing ordered items **MUST** define how ordering is represented or derived.
 
 ### Rationale
 
@@ -100,7 +100,7 @@ Ordering as record content
 
 ### Statement
 
-A schema MAY define ordering as part of the record content.
+A schema **MAY** define ordering as part of the record content.
 
 ### Rationale
 
@@ -129,7 +129,7 @@ Application-derived ordering
 
 ### Statement
 
-A schema MAY define that ordering is derived by an application rather than stored canonically in the record.
+A schema **MAY** define that ordering is derived by an application rather than stored canonically in the record.
 
 ### Rationale
 
@@ -142,7 +142,7 @@ Applications must not imply that an application-derived order is repository-wide
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 
@@ -158,7 +158,7 @@ Relationship-record ordering
 
 ### Statement
 
-A schema MAY define that ordering is maintained through separate relationship records.
+A schema **MAY** define that ordering is maintained through separate relationship records.
 
 ### Rationale
 
@@ -187,7 +187,7 @@ No assumed repository-wide order
 
 ### Statement
 
-Applications SHOULD NOT assume a repository-wide universal order where the applicable schema does not define one.
+Applications **SHOULD NOT** assume a repository-wide universal order where the applicable schema does not define one.
 
 ### Rationale
 

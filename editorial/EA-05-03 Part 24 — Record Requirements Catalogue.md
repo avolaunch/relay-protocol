@@ -42,7 +42,7 @@ Blob-reference support
 
 ### Statement
 
-A Relay Record MAY refer to one or more blobs.
+A Relay Record **MAY** refer to one or more blobs.
 
 ### Rationale
 
@@ -71,7 +71,7 @@ Blob identifier
 
 ### Statement
 
-A blob reference SHOULD include a blob identifier.
+A blob reference **SHOULD** include a blob identifier.
 
 ### Rationale
 
@@ -100,7 +100,7 @@ Blob media type
 
 ### Statement
 
-A blob reference SHOULD include the blob’s media type.
+A blob reference **SHOULD** include the blob’s media type.
 
 ### Rationale
 
@@ -129,7 +129,7 @@ Blob intended role
 
 ### Statement
 
-A blob reference SHOULD identify the intended role or purpose of the blob within the record.
+A blob reference **SHOULD** identify the intended role or purpose of the blob within the record.
 
 ### Rationale
 
@@ -158,7 +158,7 @@ Blob accessibility metadata
 
 ### Statement
 
-A blob reference SHOULD include accessibility metadata where applicable.
+A blob reference **SHOULD** include accessibility metadata where applicable.
 
 ### Rationale
 
@@ -187,7 +187,7 @@ Optional blob dimensions or duration
 
 ### Statement
 
-A blob reference MAY include dimensions or duration where relevant to the referenced media.
+A blob reference **MAY** include dimensions or duration where relevant to the referenced media.
 
 ### Rationale
 
@@ -216,7 +216,7 @@ Blob integrity hash
 
 ### Statement
 
-A blob reference SHOULD include an integrity hash.
+A blob reference **SHOULD** include an integrity hash.
 
 ### Rationale
 
@@ -229,7 +229,8 @@ The hash enables applications or repositories to verify that retrieved blob cont
 
 ### Related Invariants
 
-None identified.
+- CI-10
+- CI-08
 
 ---
 
@@ -245,7 +246,7 @@ Temporary URL not permanent blob identity
 
 ### Statement
 
-A Relay Record MUST NOT treat a temporary storage or delivery URL as the permanent identity of a blob.
+A Relay Record **MUST NOT** treat a temporary storage or delivery URL as the permanent identity of a blob.
 
 ### Rationale
 
@@ -258,7 +259,7 @@ Temporary URLs may expire, rotate or change providers. Stable blob identity must
 
 ### Related Invariants
 
-None identified.
+- CI-05
 
 ---
 

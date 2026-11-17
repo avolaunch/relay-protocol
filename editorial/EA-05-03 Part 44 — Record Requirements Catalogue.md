@@ -46,7 +46,7 @@ JSON-compatible structured records
 
 ### Statement
 
-Relay v0.1 SHOULD provisionally represent records using a JSON-compatible structured data model.
+Relay v0.1 **SHOULD** provisionally represent records using a JSON-compatible structured data model.
 
 ### Rationale
 
@@ -77,7 +77,7 @@ Stable Record URIs
 
 ### Statement
 
-Relay v0.1 MUST provisionally use stable Record URIs for the persistent identity of logical records.
+Relay v0.1 **MUST** provisionally use stable Record URIs for the persistent identity of logical records.
 
 ### Rationale
 
@@ -90,7 +90,7 @@ This assumption is consistent with the record invariants and the core record pri
 
 ### Related Invariants
 
-None identified.
+- CI-05
 
 ---
 
@@ -108,7 +108,7 @@ Versioned schemas
 
 ### Statement
 
-Relay v0.1 MUST provisionally support explicit schema versioning.
+Relay v0.1 **MUST** provisionally support explicit schema versioning.
 
 ### Rationale
 
@@ -139,7 +139,7 @@ One current version per logical record
 
 ### Statement
 
-Relay v0.1 MUST provisionally maintain exactly one authoritative current version for each active logical record.
+Relay v0.1 **MUST** provisionally maintain exactly one authoritative current version for each active logical record.
 
 ### Rationale
 
@@ -152,7 +152,8 @@ Conflicting proposed versions may be preserved as candidates, but they must not 
 
 ### Related Invariants
 
-None identified.
+- CI-07
+- AI-01
 
 ---
 
@@ -170,7 +171,7 @@ Optimistic concurrency checks
 
 ### Statement
 
-Relay v0.1 MUST provisionally use optimistic concurrency checks for record updates.
+Relay v0.1 **MUST** provisionally use optimistic concurrency checks for record updates.
 
 ### Rationale
 
@@ -201,7 +202,7 @@ Signed commits as minimum authority proof
 
 ### Statement
 
-Relay v0.1 MUST provisionally treat a valid signed repository commit as the minimum authority proof for an accepted record operation.
+Relay v0.1 **MUST** provisionally treat a valid signed repository commit as the minimum authority proof for an accepted record operation.
 
 ### Rationale
 
@@ -214,7 +215,7 @@ This does not preclude stronger or additional signatures where required by a sch
 
 ### Related Invariants
 
-None identified.
+- CI-02
 
 ---
 
@@ -232,7 +233,7 @@ Optional signatures for externally issued assertions
 
 ### Statement
 
-Relay v0.1 MAY provisionally support individual record signatures for externally issued assertions in addition to signed repository commits.
+Relay v0.1 **MAY** provisionally support individual record signatures for externally issued assertions in addition to signed repository commits.
 
 ### Rationale
 
@@ -263,7 +264,7 @@ Four visibility classifications
 
 ### Statement
 
-Relay v0.1 SHOULD provisionally support public, unlisted, restricted and private record visibility classifications.
+Relay v0.1 **SHOULD** provisionally support public, unlisted, restricted and private record visibility classifications.
 
 ### Rationale
 
@@ -276,7 +277,7 @@ These classifications do not by themselves determine usage rights or legal owner
 
 ### Related Invariants
 
-None identified.
+- AI-07
 
 ---
 
@@ -294,7 +295,7 @@ Logical deletion with tombstones
 
 ### Statement
 
-Relay v0.1 MUST provisionally support logical deletion represented through tombstones or equivalent minimum persistent deletion records.
+Relay v0.1 **MUST** provisionally support logical deletion represented through tombstones or equivalent minimum persistent deletion records.
 
 ### Rationale
 
@@ -307,7 +308,7 @@ The retained tombstone should preserve only the information necessary for integr
 
 ### Related Invariants
 
-None identified.
+- CI-10
 
 ---
 
@@ -325,7 +326,7 @@ No reuse of deleted Record Keys
 
 ### Statement
 
-Relay v0.1 MUST provisionally prohibit reuse of a deleted Record Key for a different logical record.
+Relay v0.1 **MUST** provisionally prohibit reuse of a deleted Record Key for a different logical record.
 
 ### Rationale
 
@@ -338,7 +339,7 @@ The associated tombstone preserves evidence that the identifier has already been
 
 ### Related Invariants
 
-None identified.
+- CI-05
 
 ---
 
@@ -356,7 +357,7 @@ Content-addressed blob references
 
 ### Statement
 
-Relay v0.1 MUST provisionally identify referenced blobs through content-addressed identifiers rather than treating temporary storage URLs as permanent blob identity.
+Relay v0.1 **MUST** provisionally identify referenced blobs through content-addressed identifiers rather than treating temporary storage URLs as permanent blob identity.
 
 ### Rationale
 
@@ -387,7 +388,7 @@ Structured provenance
 
 ### Statement
 
-Relay v0.1 SHOULD provisionally support structured record provenance.
+Relay v0.1 **SHOULD** provisionally support structured record provenance.
 
 ### Rationale
 
@@ -400,7 +401,7 @@ Provenance declarations must continue to distinguish declared origin from indepe
 
 ### Related Invariants
 
-None identified.
+- CI-10
 
 ---
 
@@ -418,7 +419,7 @@ Preservation of unknown fields and schemas
 
 ### Statement
 
-Relay v0.1 MUST provisionally preserve valid but unknown fields, extensions and record schemas during storage, migration and round-trip processing.
+Relay v0.1 **MUST** provisionally preserve valid but unknown fields, extensions and record schemas during storage, migration and round-trip processing.
 
 ### Rationale
 
@@ -431,7 +432,9 @@ An implementation may decline to render or interpret an unknown type but must no
 
 ### Related Invariants
 
-None identified.
+- CI-03
+- AI-04
+- CI-09
 
 ---
 
@@ -449,7 +452,7 @@ Acting-identity storage for replies, reactions and reposts
 
 ### Statement
 
-Relay v0.1 SHOULD provisionally store replies, reactions and reposts in the repository of the identity that authorised the respective action record.
+Relay v0.1 **SHOULD** provisionally store replies, reactions and reposts in the repository of the identity that authorised the respective action record.
 
 ### Rationale
 
@@ -462,7 +465,8 @@ The repository of the referenced content may index or display these records but 
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -480,7 +484,7 @@ Projections remain non-canonical unless explicitly saved
 
 ### Statement
 
-Relay v0.1 MUST provisionally treat application projections as non-canonical unless the controller explicitly saves and authorises them as repository records.
+Relay v0.1 **MUST** provisionally treat application projections as non-canonical unless the controller explicitly saves and authorises them as repository records.
 
 ### Rationale
 
@@ -493,7 +497,10 @@ Derived views, cards, rankings and recommendations must not automatically pollut
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
+- CI-07
+- CI-04
 
 ---
 
@@ -511,7 +518,7 @@ Moderation labels as separate records
 
 ### Statement
 
-Relay v0.1 SHOULD provisionally represent moderation labels as records separate from the target record.
+Relay v0.1 **SHOULD** provisionally represent moderation labels as records separate from the target record.
 
 ### Rationale
 
@@ -542,7 +549,7 @@ Schema rules layered over a common envelope
 
 ### Statement
 
-Relay v0.1 MUST provisionally apply schema-specific content and behaviour rules on top of a common protocol-level Record Envelope.
+Relay v0.1 **MUST** provisionally apply schema-specific content and behaviour rules on top of a common protocol-level Record Envelope.
 
 ### Rationale
 

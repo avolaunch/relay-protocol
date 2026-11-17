@@ -42,7 +42,7 @@ Projection definition
 
 ### Statement
 
-A Projection MUST be treated as an application-specific representation derived from one or more source records.
+A Projection **MUST** be treated as an application-specific representation derived from one or more source records.
 
 ### Rationale
 
@@ -55,7 +55,7 @@ Examples include feed cards, profile pages, search results, résumés and recomm
 
 ### Related Invariants
 
-None identified.
+- CI-04
 
 ---
 
@@ -71,7 +71,7 @@ Projection not automatically canonical
 
 ### Statement
 
-An application-generated Projection MUST NOT be treated as a canonical Relay Record merely because it was derived or displayed.
+An application-generated Projection **MUST NOT** be treated as a canonical Relay Record merely because it was derived or displayed.
 
 ### Rationale
 
@@ -84,7 +84,7 @@ Derived application views remain outside canonical repository history unless del
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 
@@ -100,7 +100,7 @@ Deliberate saving requirement
 
 ### Statement
 
-A Projection MUST become a repository record only when the controller deliberately saves it through an authorised repository operation.
+A Projection **MUST** become a repository record only when the controller deliberately saves it through an authorised repository operation.
 
 ### Rationale
 
@@ -113,7 +113,8 @@ Automatic generation, caching or display does not satisfy the deliberate-saving 
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -129,7 +130,7 @@ Prevention of projection pollution
 
 ### Statement
 
-Applications SHOULD preserve the distinction between Projections and repository records so that transient or application-generated views do not pollute the controller’s canonical history.
+Applications **SHOULD** preserve the distinction between Projections and repository records so that transient or application-generated views do not pollute the controller’s canonical history.
 
 ### Rationale
 
@@ -142,7 +143,9 @@ The requirement supports meaningful canonical history rather than indiscriminate
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-07
+- CI-10
 
 ---
 

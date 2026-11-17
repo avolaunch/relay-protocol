@@ -55,7 +55,7 @@ The rule continues to apply after deletion and is supported by tombstone retenti
 
 ### Related Invariants
 
-None identified.
+- CI-05
 
 ---
 
@@ -84,7 +84,7 @@ The rule continues to apply after deletion and is supported by tombstone retenti
 
 ### Related Invariants
 
-None identified.
+- CI-05
 
 ---
 
@@ -100,7 +100,7 @@ URI stability under editing invariant
 
 ### Statement
 
-Editing a record MUST NOT change the Record URI of the logical record.
+Editing a record **MUST NOT** change the Record URI of the logical record.
 
 ### Rationale
 
@@ -113,7 +113,7 @@ The edit creates a new version rather than a new logical identity.
 
 ### Related Invariants
 
-None identified.
+- CI-05
 
 ---
 
@@ -129,7 +129,7 @@ Accepted-commit membership invariant
 
 ### Statement
 
-Every current Record Version MUST belong to an accepted repository commit.
+Every current Record Version **MUST** belong to an accepted repository commit.
 
 ### Rationale
 
@@ -142,7 +142,8 @@ A locally generated or pending version cannot be represented as canonical curren
 
 ### Related Invariants
 
-None identified.
+- CI-07
+- AI-02
 
 ---
 
@@ -158,7 +159,7 @@ Submitter-authority distinction invariant
 
 ### Statement
 
-The Record Model MUST NOT assume that the submitting application or agent is the authorising identity.
+The Record Model **MUST NOT** assume that the submitting application or agent is the authorising identity.
 
 ### Rationale
 
@@ -171,7 +172,9 @@ The two roles may coincide but must remain independently representable.
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
+- CI-11
 
 ---
 
@@ -187,7 +190,7 @@ Schema-use ownership invariant
 
 ### Statement
 
-Use of a schema MUST NOT confer ownership or repository control of the record on the schema publisher.
+Use of a schema **MUST NOT** confer ownership or repository control of the record on the schema publisher.
 
 ### Rationale
 
@@ -200,7 +203,8 @@ Schema authority governs the schema definition, not individual conforming record
 
 ### Related Invariants
 
-None identified.
+- CI-12
+- CI-11
 
 ---
 
@@ -216,7 +220,7 @@ Visibility-rights distinction invariant
 
 ### Statement
 
-A record’s visibility classification MUST NOT be treated as determining its legal ownership or usage rights.
+A record’s visibility classification **MUST NOT** be treated as determining its legal ownership or usage rights.
 
 ### Rationale
 
@@ -229,7 +233,7 @@ A public record may remain subject to licensing, attribution, commercial-use or 
 
 ### Related Invariants
 
-None identified.
+- AI-07
 
 ---
 
@@ -245,7 +249,7 @@ Deletion-history integrity invariant
 
 ### Statement
 
-Record deletion MUST preserve sufficient repository history to avoid falsely representing that the logical record never existed.
+Record deletion **MUST** preserve sufficient repository history to avoid falsely representing that the logical record never existed.
 
 ### Rationale
 
@@ -258,7 +262,7 @@ The retained history may be reduced to minimum verification metadata or a tombst
 
 ### Related Invariants
 
-None identified.
+- CI-10
 
 ---
 
@@ -274,7 +278,7 @@ Unknown-field migration invariant
 
 ### Statement
 
-Unknown but valid fields and extensions MUST survive migration without being stripped or altered solely because the receiving implementation does not understand them.
+Unknown but valid fields and extensions **MUST** survive migration without being stripped or altered solely because the receiving implementation does not understand them.
 
 ### Rationale
 
@@ -287,7 +291,9 @@ This rule applies to valid unknown data, not malformed or prohibited fields.
 
 ### Related Invariants
 
-None identified.
+- CI-03
+- AI-04
+- CI-09
 
 ---
 
@@ -303,7 +309,7 @@ Projection canonicality invariant
 
 ### Statement
 
-An application projection MUST NOT be treated as a canonical Relay Record unless the controller deliberately causes it to be accepted into the repository.
+An application projection **MUST NOT** be treated as a canonical Relay Record unless the controller deliberately causes it to be accepted into the repository.
 
 ### Rationale
 
@@ -316,7 +322,10 @@ Derived views, scores and presentation objects remain application state until de
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-07
+- CI-04
+- AI-02
 
 ---
 
@@ -332,7 +341,7 @@ Cached-copy identity and provenance invariant
 
 ### Statement
 
-A cached copy of a Relay Record MUST retain the canonical Record URI and source provenance.
+A cached copy of a Relay Record **MUST** retain the canonical Record URI and source provenance.
 
 ### Rationale
 
@@ -345,7 +354,9 @@ A cache must not relabel itself as the canonical source or detach the copy from 
 
 ### Related Invariants
 
-None identified.
+- CI-05
+- CI-07
+- CI-10
 
 ---
 
@@ -361,7 +372,7 @@ Index non-ownership invariant
 
 ### Statement
 
-Indexing a public record MUST NOT make the index the canonical owner or authoritative repository of that record.
+Indexing a public record **MUST NOT** make the index the canonical owner or authoritative repository of that record.
 
 ### Rationale
 
@@ -374,7 +385,8 @@ An index is a discovery or projection layer and remains subordinate to the canon
 
 ### Related Invariants
 
-None identified.
+- CI-07
+- CI-11
 
 ---
 
@@ -403,7 +415,9 @@ The referenced-content controller may index, display or moderate the interaction
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
+- CI-11
 
 ---
 
@@ -432,7 +446,8 @@ The referenced-content controller may index, display or moderate the interaction
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-11
 
 ---
 

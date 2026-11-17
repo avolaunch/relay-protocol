@@ -44,7 +44,7 @@ Reply stored in replying identity’s repository
 
 ### Statement
 
-A reply SHOULD normally be represented as a record in the repository of the identity that created the reply.
+A reply **SHOULD** normally be represented as a record in the repository of the identity that created the reply.
 
 ### Rationale
 
@@ -73,7 +73,7 @@ Indexing and display by target-side services
 
 ### Statement
 
-The provider or application serving the target record MAY index and display a reply stored in another identity’s repository.
+The provider or application serving the target record **MAY** index and display a reply stored in another identity’s repository.
 
 ### Rationale
 
@@ -86,7 +86,7 @@ Indexing or display does not transfer canonical authority over the reply.
 
 ### Related Invariants
 
-None identified.
+- CI-03
 
 ---
 
@@ -102,7 +102,7 @@ Reply repository remains canonical source
 
 ### Statement
 
-The replying identity’s repository MUST remain the canonical source of the reply unless an explicitly authorised protocol operation changes that authority.
+The replying identity’s repository **MUST** remain the canonical source of the reply unless an explicitly authorised protocol operation changes that authority.
 
 ### Rationale
 
@@ -115,7 +115,9 @@ Copies, indexes and cached renderings are secondary representations.
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
+- CI-07
 
 ---
 
@@ -131,7 +133,7 @@ Cross-client reply editing
 
 ### Statement
 
-The replying identity SHOULD be able to edit the reply through an authorised client other than the application that originally created it.
+The replying identity **SHOULD** be able to edit the reply through an authorised client other than the application that originally created it.
 
 ### Rationale
 
@@ -144,7 +146,8 @@ Editing remains subject to the reply schema, repository permissions and versioni
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -160,7 +163,7 @@ Cross-client reply deletion
 
 ### Statement
 
-The replying identity SHOULD be able to delete the reply through an authorised client other than the application that originally created it.
+The replying identity **SHOULD** be able to delete the reply through an authorised client other than the application that originally created it.
 
 ### Rationale
 
@@ -173,7 +176,8 @@ Deletion remains subject to the repository’s deletion and tombstone requiremen
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -189,7 +193,7 @@ Target author does not own reply
 
 ### Statement
 
-The identity controlling the target record MUST NOT be treated as the owner or controller of another identity’s reply merely because the reply references that target.
+The identity controlling the target record **MUST NOT** be treated as the owner or controller of another identity’s reply merely because the reply references that target.
 
 ### Rationale
 
@@ -202,7 +206,7 @@ The target-side application may moderate display without acquiring canonical con
 
 ### Related Invariants
 
-None identified.
+- CI-02
 
 ---
 
@@ -218,7 +222,7 @@ Application-specific moderation policies
 
 ### Statement
 
-Different applications MAY apply different moderation or display policies to the same reply.
+Different applications **MAY** apply different moderation or display policies to the same reply.
 
 ### Rationale
 
@@ -247,7 +251,7 @@ Reply survival beyond originating application
 
 ### Statement
 
-A canonical reply SHOULD remain available through its repository independently of the continued existence of the application that created it.
+A canonical reply **SHOULD** remain available through its repository independently of the continued existence of the application that created it.
 
 ### Rationale
 
@@ -260,7 +264,7 @@ This outcome depends on repository continuity and reinforces why the application
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 

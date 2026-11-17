@@ -44,7 +44,7 @@ Universal type support not required
 
 ### Statement
 
-A compliant Relay application MUST NOT be required to fully interpret or render every valid Relay record type.
+A compliant Relay application **MUST NOT** be required to fully interpret or render every valid Relay record type.
 
 ### Rationale
 
@@ -73,7 +73,7 @@ Minimum handling of unsupported records
 
 ### Statement
 
-A compliant application MUST NOT damage, misrepresent or discard a valid record solely because the application does not support its record type.
+A compliant application **MUST NOT** damage, misrepresent or discard a valid record solely because the application does not support its record type.
 
 ### Rationale
 
@@ -86,7 +86,7 @@ The application may decline to display or operate on the record, but must preser
 
 ### Related Invariants
 
-None identified.
+- AI-10
 
 ---
 

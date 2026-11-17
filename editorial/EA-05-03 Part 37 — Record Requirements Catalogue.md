@@ -42,7 +42,7 @@ Multiple record changes in one commit
 
 ### Statement
 
-An application MAY submit multiple record changes together as one repository commit.
+An application **MAY** submit multiple record changes together as one repository commit.
 
 ### Rationale
 
@@ -71,7 +71,7 @@ Atomic batch success or failure
 
 ### Statement
 
-A batch commit MUST be atomic: all included record changes MUST be accepted together, or none of them MUST be accepted.
+A batch commit **MUST** be atomic: all included record changes MUST be accepted together, or none of them MUST be accepted.
 
 ### Rationale
 
@@ -84,7 +84,7 @@ Partial acceptance would leave repository state inconsistent with the submitted 
 
 ### Related Invariants
 
-None identified.
+- AI-03
 
 ---
 
@@ -100,7 +100,7 @@ Independent addressability after batch acceptance
 
 ### Statement
 
-Each record affected or created by an accepted batch commit MUST remain independently addressable after acceptance.
+Each record affected or created by an accepted batch commit **MUST** remain independently addressable after acceptance.
 
 ### Rationale
 
@@ -129,7 +129,7 @@ Batch commit does not replace record identity
 
 ### Statement
 
-The identity of the batch commit MUST remain distinct from the stable logical identity of each record included in that commit.
+The identity of the batch commit **MUST** remain distinct from the stable logical identity of each record included in that commit.
 
 ### Rationale
 

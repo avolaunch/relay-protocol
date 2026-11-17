@@ -42,7 +42,7 @@ Basic compliance-scenario expectation
 
 ### Statement
 
-A basic Relay Record implementation SHOULD pass the complete compliance scenario defined in Section 45.
+A basic Relay Record implementation **SHOULD** pass the complete compliance scenario defined in Section 45.
 
 ### Rationale
 
@@ -55,7 +55,7 @@ The source uses “should”, so the scenario is an expected baseline test rathe
 
 ### Related Invariants
 
-None identified.
+- AI-10
 
 ---
 
@@ -71,7 +71,7 @@ Initial public-record creation
 
 ### Statement
 
-The implementation SHOULD allow an authorised application to create a public record that becomes version 1 when accepted by the repository.
+The implementation **SHOULD** allow an authorised application to create a public record that becomes version 1 when accepted by the repository.
 
 ### Rationale
 
@@ -84,7 +84,8 @@ The example Record URI is illustrative rather than mandatory syntax beyond the s
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -100,7 +101,7 @@ Cross-application record reading and updating
 
 ### Statement
 
-The implementation SHOULD allow another authorised application to read and update the same logical record.
+The implementation **SHOULD** allow another authorised application to read and update the same logical record.
 
 ### Rationale
 
@@ -113,7 +114,8 @@ The second application does not acquire ownership by performing the update.
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -129,7 +131,7 @@ Acceptance of the second version
 
 ### Statement
 
-A valid cross-application update SHOULD be accepted as a new Record Version rather than replacing version 1 without history.
+A valid cross-application update **SHOULD** be accepted as a new Record Version rather than replacing version 1 without history.
 
 ### Rationale
 
@@ -142,7 +144,7 @@ The new version remains part of the same logical record.
 
 ### Related Invariants
 
-None identified.
+- CI-10
 
 ---
 
@@ -158,7 +160,7 @@ URI continuity across applications and versions
 
 ### Statement
 
-The Record URI SHOULD remain unchanged when another application creates a new accepted version of the record.
+The Record URI **SHOULD** remain unchanged when another application creates a new accepted version of the record.
 
 ### Rationale
 
@@ -171,7 +173,7 @@ This scenario tests the general URI-stability invariant.
 
 ### Related Invariants
 
-None identified.
+- CI-05
 
 ---
 
@@ -187,7 +189,7 @@ Stale-update detection
 
 ### Statement
 
-The implementation SHOULD detect an update based on a stale expected version when a newer current version already exists.
+The implementation **SHOULD** detect an update based on a stale expected version when a newer current version already exists.
 
 ### Rationale
 
@@ -200,7 +202,7 @@ The example tests optimistic concurrency behaviour.
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 
@@ -216,7 +218,7 @@ Stale-update rejection or conflict marking
 
 ### Statement
 
-The repository SHOULD reject a stale update or explicitly mark and preserve it as a conflict requiring resolution.
+The repository **SHOULD** reject a stale update or explicitly mark and preserve it as a conflict requiring resolution.
 
 ### Rationale
 
@@ -245,7 +247,7 @@ No silent overwrite of current version
 
 ### Statement
 
-The repository SHOULD NOT silently overwrite the current version with an update based on stale state.
+The repository **SHOULD NOT** silently overwrite the current version with an update based on stale state.
 
 ### Rationale
 
@@ -258,7 +260,7 @@ This retains the Section 45 scenario’s governing SHOULD framing. Independently
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 
@@ -274,7 +276,7 @@ Reply stored in replying identity’s repository
 
 ### Statement
 
-The implementation SHOULD support creation of a reply in the replying identity’s repository while referencing the original record in another repository.
+The implementation **SHOULD** support creation of a reply in the replying identity’s repository while referencing the original record in another repository.
 
 ### Rationale
 
@@ -303,7 +305,7 @@ Cross-application display of reply
 
 ### Statement
 
-An application displaying the original record SHOULD be able to resolve and display an accessible reply stored in another identity’s repository.
+An application displaying the original record **SHOULD** be able to resolve and display an accessible reply stored in another identity’s repository.
 
 ### Rationale
 
@@ -332,7 +334,7 @@ Reply-controller continuity
 
 ### Statement
 
-The replying identity SHOULD remain the controller of the reply record even when another identity’s application displays it.
+The replying identity **SHOULD** remain the controller of the reply record even when another identity’s application displays it.
 
 ### Rationale
 
@@ -345,7 +347,7 @@ This tests the acting-identity ownership invariant.
 
 ### Related Invariants
 
-None identified.
+- CI-02
 
 ---
 
@@ -361,7 +363,7 @@ Visibility change creates a version
 
 ### Statement
 
-An authorised change from public to restricted visibility SHOULD create a new accepted Record Version recording that change.
+An authorised change from public to restricted visibility **SHOULD** create a new accepted Record Version recording that change.
 
 ### Rationale
 
@@ -374,7 +376,9 @@ The primary content may remain unchanged while the metadata change creates a new
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
+- AI-07
 
 ---
 
@@ -390,7 +394,7 @@ Refusal of future unauthorised access
 
 ### Statement
 
-After a valid visibility restriction, the repository SHOULD refuse future access attempts that do not satisfy the applicable authority or audience rule.
+After a valid visibility restriction, the repository **SHOULD** refuse future access attempts that do not satisfy the applicable authority or audience rule.
 
 ### Rationale
 
@@ -403,7 +407,8 @@ The requirement concerns future authorised service and cannot revoke copies alre
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- AI-07
 
 ---
 
@@ -419,7 +424,7 @@ Policy-governed removal of active content
 
 ### Statement
 
-When the controller deletes the record, the implementation SHOULD remove or withhold its active content in accordance with the applicable deletion policy.
+When the controller deletes the record, the implementation **SHOULD** remove or withhold its active content in accordance with the applicable deletion policy.
 
 ### Rationale
 
@@ -432,7 +437,7 @@ The exact retained verification metadata depends on the deletion mode and tombst
 
 ### Related Invariants
 
-None identified.
+- CI-02
 
 ---
 
@@ -448,7 +453,7 @@ Tombstone prevention of Record URI reuse
 
 ### Statement
 
-Deletion SHOULD leave sufficient tombstone state to prevent reuse or reassignment of the deleted Record URI.
+Deletion **SHOULD** leave sufficient tombstone state to prevent reuse or reassignment of the deleted Record URI.
 
 ### Rationale
 
@@ -461,7 +466,8 @@ This applies even when the active content has been erased.
 
 ### Related Invariants
 
-None identified.
+- CI-05
+- CI-10
 
 ---
 
@@ -477,7 +483,7 @@ Tombstone preservation of minimum verification history
 
 ### Statement
 
-The tombstone SHOULD preserve the minimum verification history required to demonstrate the prior existence and authorised deletion of the logical record.
+The tombstone **SHOULD** preserve the minimum verification history required to demonstrate the prior existence and authorised deletion of the logical record.
 
 ### Rationale
 
@@ -490,7 +496,10 @@ The tombstone should not retain more deleted content than necessary.
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
+- CI-10
+- CI-08
 
 ---
 
@@ -506,7 +515,7 @@ Migration continuity for URI, versions and tombstone
 
 ### Statement
 
-Repository migration SHOULD preserve the record’s Record URI, accepted versions and tombstone intact at the receiving provider.
+Repository migration **SHOULD** preserve the record’s Record URI, accepted versions and tombstone intact at the receiving provider.
 
 ### Rationale
 
@@ -519,7 +528,10 @@ This scenario tests portability after both versioning and deletion history have 
 
 ### Related Invariants
 
-None identified.
+- CI-05
+- CI-03
+- AI-04
+- CI-10
 
 ---
 
@@ -535,7 +547,7 @@ Basic Relay Record objective
 
 ### Statement
 
-An implementation SHOULD be considered to satisfy the basic Relay Record objective when it completes the Section 45 operations without conflating application ownership, logical record identity, historical versions or visibility state.
+An implementation **SHOULD** be considered to satisfy the basic Relay Record objective when it completes the Section 45 operations without conflating application ownership, logical record identity, historical versions or visibility state.
 
 ### Rationale
 
@@ -548,7 +560,8 @@ The scenario evaluates both functional operations and preservation of the Record
 
 ### Related Invariants
 
-None identified.
+- CI-10
+- AI-07
 
 ---
 

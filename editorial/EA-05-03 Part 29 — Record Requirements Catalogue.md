@@ -42,7 +42,7 @@ Controlled schema extension
 
 ### Statement
 
-Relay SHOULD support controlled extension of existing schemas.
+Relay **SHOULD** support controlled extension of existing schemas.
 
 ### Rationale
 
@@ -71,7 +71,7 @@ Optional extension fields
 
 ### Statement
 
-A schema extension mechanism MAY support optional extension fields.
+A schema extension mechanism **MAY** support optional extension fields.
 
 ### Rationale
 
@@ -84,7 +84,7 @@ Applications that do not understand an optional extension should still be able t
 
 ### Related Invariants
 
-None identified.
+- CI-09
 
 ---
 
@@ -100,7 +100,7 @@ Referenced extension records
 
 ### Statement
 
-A schema extension mechanism MAY represent additional information through separately referenced extension records.
+A schema extension mechanism **MAY** represent additional information through separately referenced extension records.
 
 ### Rationale
 
@@ -113,7 +113,7 @@ Separate records can reduce mutation of the base record and allow independent au
 
 ### Related Invariants
 
-None identified.
+- CI-09
 
 ---
 
@@ -129,7 +129,7 @@ Schema inheritance
 
 ### Statement
 
-A schema extension mechanism MAY support schema inheritance.
+A schema extension mechanism **MAY** support schema inheritance.
 
 ### Rationale
 
@@ -142,7 +142,7 @@ Inheritance must not change the established meaning of inherited required core f
 
 ### Related Invariants
 
-None identified.
+- CI-09
 
 ---
 
@@ -158,7 +158,7 @@ Namespaced metadata
 
 ### Statement
 
-A schema extension mechanism MAY support namespaced metadata.
+A schema extension mechanism **MAY** support namespaced metadata.
 
 ### Rationale
 
@@ -171,7 +171,7 @@ Namespacing allows independently defined extensions to coexist without redefinin
 
 ### Related Invariants
 
-None identified.
+- CI-09
 
 ---
 
@@ -187,7 +187,7 @@ Core-field semantic immutability
 
 ### Statement
 
-A schema extension MUST NOT redefine, contradict or replace the established meaning of any required core field.
+A schema extension **MUST NOT** redefine, contradict or replace the established meaning of any required core field.
 
 ### Rationale
 
@@ -200,7 +200,7 @@ Extensions may add information but cannot silently change the semantics on which
 
 ### Related Invariants
 
-None identified.
+- CI-09
 
 ---
 
@@ -216,7 +216,7 @@ Ignoring unsupported extensions
 
 ### Statement
 
-An application MAY ignore an extension it does not understand.
+An application **MAY** ignore an extension it does not understand.
 
 ### Rationale
 
@@ -245,7 +245,7 @@ Preservation of unsupported extensions
 
 ### Statement
 
-An application that ignores an unsupported extension SHOULD preserve that extension when reading, storing or rewriting the record.
+An application that ignores an unsupported extension **SHOULD** preserve that extension when reading, storing or rewriting the record.
 
 ### Rationale
 

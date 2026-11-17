@@ -44,7 +44,7 @@ Canonical repository exclusion for some preferences
 
 ### Statement
 
-Applications MUST NOT assume that every application preference or implementation detail belongs in the canonical Relay Repository.
+Applications **MUST NOT** assume that every application preference or implementation detail belongs in the canonical Relay Repository.
 
 ### Rationale
 
@@ -57,7 +57,7 @@ Examples that may remain local include window size, dismissed-tooltip state, tem
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 
@@ -73,7 +73,7 @@ Portability-value test for canonical inclusion
 
 ### Statement
 
-Information or state SHOULD be stored in the canonical Relay Repository when preserving it across applications provides meaningful portability or continuity value to the user.
+Information or state **SHOULD** be stored in the canonical Relay Repository when preserving it across applications provides meaningful portability or continuity value to the user.
 
 ### Rationale
 
@@ -86,7 +86,8 @@ The criterion focuses on user value rather than technical possibility.
 
 ### Related Invariants
 
-None identified.
+- CI-07
+- CI-03
 
 ---
 
@@ -102,7 +103,7 @@ Discouragement of irrelevant implementation details
 
 ### Statement
 
-The protocol SHOULD discourage applications from storing irrelevant implementation details in the canonical Relay Repository.
+The protocol **SHOULD** discourage applications from storing irrelevant implementation details in the canonical Relay Repository.
 
 ### Rationale
 
@@ -115,7 +116,7 @@ Excess local-state records can reduce clarity, portability and long-term reposit
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 
@@ -131,7 +132,7 @@ Reasonable survival expectation test
 
 ### Statement
 
-Applications SHOULD evaluate canonical inclusion by asking whether the person would reasonably expect the information or state to survive a change of application.
+Applications **SHOULD** evaluate canonical inclusion by asking whether the person would reasonably expect the information or state to survive a change of application.
 
 ### Rationale
 
@@ -144,7 +145,7 @@ The test is editorial guidance for deciding whether state has meaningful portabi
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 
@@ -160,7 +161,7 @@ Local retention where survival is not expected
 
 ### Statement
 
-Information or state MAY remain local where a person would not reasonably expect it to survive a change of application.
+Information or state **MAY** remain local where a person would not reasonably expect it to survive a change of application.
 
 ### Rationale
 

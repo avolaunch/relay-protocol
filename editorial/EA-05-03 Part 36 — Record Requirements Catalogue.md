@@ -42,7 +42,7 @@ Conflict definition
 
 ### Statement
 
-An implementation MUST recognise a record conflict when two or more update operations attempt to replace the same current Record Version.
+An implementation **MUST** recognise a record conflict when two or more update operations attempt to replace the same current Record Version.
 
 ### Rationale
 
@@ -55,7 +55,7 @@ The requirement applies regardless of whether the updates originate from the sam
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 
@@ -71,7 +71,7 @@ No silent dual linear acceptance
 
 ### Statement
 
-The repository MUST NOT silently accept conflicting updates as though both formed one unambiguous linear continuation of the record history.
+The repository **MUST NOT** silently accept conflicting updates as though both formed one unambiguous linear continuation of the record history.
 
 ### Rationale
 
@@ -84,7 +84,8 @@ The repository must expose or resolve the conflict through an explicit outcome.
 
 ### Related Invariants
 
-None identified.
+- CI-10
+- AI-01
 
 ---
 
@@ -100,7 +101,7 @@ Conflict outcome: reject later submission
 
 ### Statement
 
-A repository MAY resolve a record conflict by rejecting the later conflicting submission.
+A repository **MAY** resolve a record conflict by rejecting the later conflicting submission.
 
 ### Rationale
 
@@ -129,7 +130,7 @@ Conflict outcome: request user review
 
 ### Statement
 
-A repository or application MAY require user review before resolving a record conflict.
+A repository or application **MAY** require user review before resolving a record conflict.
 
 ### Rationale
 
@@ -158,7 +159,7 @@ Conflict outcome: reconciled version
 
 ### Statement
 
-A conflict-resolution process MAY create a new reconciled Record Version.
+A conflict-resolution process **MAY** create a new reconciled Record Version.
 
 ### Rationale
 
@@ -187,7 +188,7 @@ Conflict outcome: preserve candidates
 
 ### Statement
 
-A repository MAY preserve conflicting proposed versions as separately identifiable conflict candidates.
+A repository **MAY** preserve conflicting proposed versions as separately identifiable conflict candidates.
 
 ### Rationale
 
@@ -216,7 +217,7 @@ Application-assisted merge
 
 ### Statement
 
-For text or other mergeable record formats, an application MAY offer a merge of conflicting proposals.
+For text or other mergeable record formats, an application **MAY** offer a merge of conflicting proposals.
 
 ### Rationale
 
@@ -245,7 +246,7 @@ Explicit authorisation of merged record
 
 ### Statement
 
-A merged record produced during conflict resolution MUST receive explicit valid authorisation before it becomes an accepted current Record Version.
+A merged record produced during conflict resolution **MUST** receive explicit valid authorisation before it becomes an accepted current Record Version.
 
 ### Rationale
 
@@ -258,7 +259,9 @@ Technical merge success does not substitute for repository authority or controll
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
+- CI-07
 
 ---
 

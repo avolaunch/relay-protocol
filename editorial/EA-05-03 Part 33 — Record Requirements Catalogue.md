@@ -44,7 +44,7 @@ Reaction represented as a record
 
 ### Statement
 
-A reaction SHOULD normally be represented as an independently addressable Relay Record.
+A reaction **SHOULD** normally be represented as an independently addressable Relay Record.
 
 ### Rationale
 
@@ -73,7 +73,7 @@ Reaction ownership by reacting identity
 
 ### Statement
 
-A reaction record SHOULD normally be controlled by the Relay Repository and authority of the identity that performed the reaction.
+A reaction record **SHOULD** normally be controlled by the Relay Repository and authority of the identity that performed the reaction.
 
 ### Rationale
 
@@ -86,7 +86,7 @@ The identity controlling the target content does not thereby own reactions made 
 
 ### Related Invariants
 
-None identified.
+- CI-02
 
 ---
 
@@ -102,7 +102,7 @@ Reaction aggregation permitted
 
 ### Statement
 
-Applications MAY aggregate individual reaction records into counts or equivalent derived summaries.
+Applications **MAY** aggregate individual reaction records into counts or equivalent derived summaries.
 
 ### Rationale
 
@@ -131,7 +131,7 @@ Reaction count is derived
 
 ### Statement
 
-An aggregate reaction count MUST be treated as a derived value rather than as the underlying canonical reaction objects.
+An aggregate reaction count **MUST** be treated as a derived value rather than as the underlying canonical reaction objects.
 
 ### Rationale
 
@@ -144,7 +144,7 @@ A count may change as reaction records are created, deleted, restricted or becom
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 
@@ -160,7 +160,7 @@ Individual reactions remain canonical
 
 ### Statement
 
-Individual accepted reaction records MUST remain the underlying canonical objects from which aggregate reaction values are derived.
+Individual accepted reaction records **MUST** remain the underlying canonical objects from which aggregate reaction values are derived.
 
 ### Rationale
 
@@ -173,7 +173,7 @@ Applications must not substitute an untraceable count for the canonical reaction
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 

@@ -44,7 +44,7 @@ Limited embedded representation
 
 ### Statement
 
-A Relay Record MAY contain a limited embedded representation of another object.
+A Relay Record **MAY** contain a limited embedded representation of another object.
 
 ### Rationale
 
@@ -73,7 +73,7 @@ Provenance for embedded content
 
 ### Statement
 
-Embedded content SHOULD include provenance sufficient to identify its source and observation context.
+Embedded content **SHOULD** include provenance sufficient to identify its source and observation context.
 
 ### Rationale
 
@@ -86,7 +86,7 @@ Useful provenance may include the source Record URI, observed version and observ
 
 ### Related Invariants
 
-None identified.
+- CI-10
 
 ---
 
@@ -115,7 +115,7 @@ Applications may separately resolve the source Record URI to obtain current stat
 
 ### Related Invariants
 
-None identified.
+- CI-10
 
 ---
 

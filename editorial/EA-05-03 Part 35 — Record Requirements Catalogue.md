@@ -44,7 +44,7 @@ Moderation decision represented separately
 
 ### Statement
 
-A moderation decision SHOULD be represented as a separate record rather than as an in-place rewrite of the target record.
+A moderation decision **SHOULD** be represented as a separate record rather than as an in-place rewrite of the target record.
 
 ### Rationale
 
@@ -73,7 +73,7 @@ Label does not alter original record
 
 ### Statement
 
-Issuing or applying a moderation label MUST NOT alter the canonical content or history of the original target record.
+Issuing or applying a moderation label **MUST NOT** alter the canonical content or history of the original target record.
 
 ### Rationale
 
@@ -86,7 +86,8 @@ An application may change how it displays or serves the target based on the labe
 
 ### Related Invariants
 
-None identified.
+- CI-07
+- CI-10
 
 ---
 
@@ -102,7 +103,7 @@ Application choice of trusted label providers
 
 ### Statement
 
-Applications MAY choose which moderation-label issuers and moderation policies they trust or enforce.
+Applications **MAY** choose which moderation-label issuers and moderation policies they trust or enforce.
 
 ### Rationale
 
@@ -131,7 +132,7 @@ No universal moderation policy in Relay v0.1
 
 ### Statement
 
-Relay v0.1 MUST NOT be interpreted as defining one universal moderation policy that all applications must apply.
+Relay v0.1 **MUST NOT** be interpreted as defining one universal moderation policy that all applications must apply.
 
 ### Rationale
 
@@ -160,7 +161,7 @@ Support for independently issued labels
 
 ### Statement
 
-The Relay Record Model MUST support moderation labels issued independently of the repository or identity controlling the target record.
+The Relay Record Model **MUST** support moderation labels issued independently of the repository or identity controlling the target record.
 
 ### Rationale
 

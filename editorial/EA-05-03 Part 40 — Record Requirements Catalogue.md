@@ -42,7 +42,7 @@ Create-record operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support creation of a record through an authorised repository operation.
+A compliant Relay v0.1 implementation **MUST** support creation of a record through an authorised repository operation.
 
 ### Rationale
 
@@ -55,7 +55,8 @@ Creation remains subject to schema, authority, validation and accepted-commit re
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -71,7 +72,7 @@ Read-current-record operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support reading the current accepted version of a logical record.
+A compliant Relay v0.1 implementation **MUST** support reading the current accepted version of a logical record.
 
 ### Rationale
 
@@ -100,7 +101,7 @@ Read-specific-version operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support reading a specific historical Record Version where that version remains retrievable and access is authorised.
+A compliant Relay v0.1 implementation **MUST** support reading a specific historical Record Version where that version remains retrievable and access is authorised.
 
 ### Rationale
 
@@ -113,7 +114,9 @@ This operation is distinct from resolving the current version through the base R
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
+- CI-10
 
 ---
 
@@ -129,7 +132,7 @@ List-records-by-collection operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support listing records by collection.
+A compliant Relay v0.1 implementation **MUST** support listing records by collection.
 
 ### Rationale
 
@@ -158,7 +161,7 @@ Validate-record-envelope operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support validation of a Record Envelope against protocol-level structural requirements.
+A compliant Relay v0.1 implementation **MUST** support validation of a Record Envelope against protocol-level structural requirements.
 
 ### Rationale
 
@@ -187,7 +190,7 @@ Validate-record-schema operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support validation of record content against its declared schema where that schema is supported.
+A compliant Relay v0.1 implementation **MUST** support validation of record content against its declared schema where that schema is supported.
 
 ### Rationale
 
@@ -216,7 +219,7 @@ Update-record operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support authorised updates to records whose schemas permit updating.
+A compliant Relay v0.1 implementation **MUST** support authorised updates to records whose schemas permit updating.
 
 ### Rationale
 
@@ -229,7 +232,8 @@ An accepted update creates a new Record Version and must satisfy concurrency and
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -245,7 +249,7 @@ Delete-record operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support authorised record deletion.
+A compliant Relay v0.1 implementation **MUST** support authorised record deletion.
 
 ### Rationale
 
@@ -258,7 +262,8 @@ Deletion must preserve the distinctions among deletion modes and apply applicabl
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -274,7 +279,7 @@ Restore-record operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support restoration of a deleted record where the schema and retained state permit restoration and the controller authorises it.
+A compliant Relay v0.1 implementation **MUST** support restoration of a deleted record where the schema and retained state permit restoration and the controller authorises it.
 
 ### Rationale
 
@@ -287,7 +292,8 @@ Restoration is conditional and creates a new current version without erasing the
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -303,7 +309,7 @@ Read-tombstone operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support reading an accessible tombstone for a deleted or retired logical record.
+A compliant Relay v0.1 implementation **MUST** support reading an accessible tombstone for a deleted or retired logical record.
 
 ### Rationale
 
@@ -316,7 +322,7 @@ The tombstone must expose only the minimum information allowed by protocol and p
 
 ### Related Invariants
 
-None identified.
+- CI-10
 
 ---
 
@@ -332,7 +338,7 @@ Verify-record-integrity operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support verification of record integrity against the applicable integrity reference and accepted repository history.
+A compliant Relay v0.1 implementation **MUST** support verification of record integrity against the applicable integrity reference and accepted repository history.
 
 ### Rationale
 
@@ -345,7 +351,8 @@ The exact proof mechanism may depend on commits, hashes, signatures or other pro
 
 ### Related Invariants
 
-None identified.
+- CI-10
+- CI-08
 
 ---
 
@@ -361,7 +368,7 @@ Resolve-record-references operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support resolution of references to other Relay Records or specific Record Versions where accessible.
+A compliant Relay v0.1 implementation **MUST** support resolution of references to other Relay Records or specific Record Versions where accessible.
 
 ### Rationale
 
@@ -390,7 +397,7 @@ Upload-and-attach-blob operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support uploading a blob and attaching its stable reference to a record where permitted by the schema.
+A compliant Relay v0.1 implementation **MUST** support uploading a blob and attaching its stable reference to a record where permitted by the schema.
 
 ### Rationale
 
@@ -419,7 +426,7 @@ Change-visibility operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support authorised changes to a record’s visibility classification where permitted.
+A compliant Relay v0.1 implementation **MUST** support authorised changes to a record’s visibility classification where permitted.
 
 ### Rationale
 
@@ -432,7 +439,9 @@ A visibility change may create a new version even where the primary content does
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
+- AI-07
 
 ---
 
@@ -448,7 +457,7 @@ Change-audience operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support authorised changes to a restricted record’s audience rules where permitted.
+A compliant Relay v0.1 implementation **MUST** support authorised changes to a restricted record’s audience rules where permitted.
 
 ### Rationale
 
@@ -461,7 +470,8 @@ Audience removal revokes future authorised access but cannot guarantee deletion 
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -477,7 +487,7 @@ Inspect-provenance operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST support inspection of the structured provenance associated with a record.
+A compliant Relay v0.1 implementation **MUST** support inspection of the structured provenance associated with a record.
 
 ### Rationale
 
@@ -490,7 +500,7 @@ Inspection must preserve the distinction between declared provenance and verifie
 
 ### Related Invariants
 
-None identified.
+- CI-10
 
 ---
 
@@ -506,7 +516,7 @@ Preserve-unknown-record-types operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST preserve valid record types that it does not understand.
+A compliant Relay v0.1 implementation **MUST** preserve valid record types that it does not understand.
 
 ### Rationale
 
@@ -535,7 +545,7 @@ Detect-update-conflict operation
 
 ### Statement
 
-A compliant Relay v0.1 implementation MUST detect when competing updates attempt to replace the same current version.
+A compliant Relay v0.1 implementation **MUST** detect when competing updates attempt to replace the same current version.
 
 ### Rationale
 
@@ -548,7 +558,7 @@ Detected conflicts must not be silently collapsed into one linear continuation.
 
 ### Related Invariants
 
-None identified.
+- CI-07
 
 ---
 

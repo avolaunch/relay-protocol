@@ -55,7 +55,8 @@ This principle summarises the Record Model and governs interpretation of the mor
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-03
 
 ---
 
@@ -84,7 +85,7 @@ This principle summarises the Record Model and governs interpretation of the mor
 
 ### Related Invariants
 
-None identified.
+- CI-04
 
 ---
 

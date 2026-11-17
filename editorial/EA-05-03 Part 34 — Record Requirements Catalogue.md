@@ -44,7 +44,7 @@ Repost must not imply copied authorship
 
 ### Statement
 
-A repost SHOULD NOT require the original record to be copied into the reposter’s repository in a form that represents the reposter as the original author.
+A repost **SHOULD NOT** require the original record to be copied into the reposter’s repository in a form that represents the reposter as the original author.
 
 ### Rationale
 
@@ -73,7 +73,7 @@ Repost represented through source reference
 
 ### Statement
 
-A repost record SHOULD reference the original source record using its stable protocol identifier.
+A repost record **SHOULD** reference the original source record using its stable protocol identifier.
 
 ### Rationale
 
@@ -102,7 +102,7 @@ Repost belongs to reposter
 
 ### Statement
 
-The repost record MUST remain controlled by the repository and authorising identity of the reposter.
+The repost record **MUST** remain controlled by the repository and authorising identity of the reposter.
 
 ### Rationale
 
@@ -115,7 +115,8 @@ The reposter may control the repost without gaining control of the referenced or
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
@@ -131,7 +132,7 @@ Original remains under original-author control
 
 ### Statement
 
-Creation of a repost MUST NOT transfer control of the original record away from its original authoritative repository and authorising identity.
+Creation of a repost **MUST NOT** transfer control of the original record away from its original authoritative repository and authorising identity.
 
 ### Rationale
 
@@ -144,7 +145,8 @@ The original author may update or delete the source according to its own schema 
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 

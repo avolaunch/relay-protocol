@@ -42,7 +42,7 @@ Schema translation capability
 
 ### Statement
 
-An application MAY translate a record from one schema into another schema.
+An application **MAY** translate a record from one schema into another schema.
 
 ### Rationale
 
@@ -71,7 +71,7 @@ Source Record URI provenance
 
 ### Statement
 
-A translated record MUST preserve the source Record URI in its provenance.
+A translated record **MUST** preserve the source Record URI in its provenance.
 
 ### Rationale
 
@@ -84,7 +84,8 @@ The source URI links the translated result to the logical record from which it w
 
 ### Related Invariants
 
-None identified.
+- CI-05
+- CI-10
 
 ---
 
@@ -100,7 +101,7 @@ Source schema provenance
 
 ### Statement
 
-A translated record MUST preserve the identifier of the source schema in its provenance.
+A translated record **MUST** preserve the identifier of the source schema in its provenance.
 
 ### Rationale
 
@@ -113,7 +114,7 @@ The source schema is necessary to understand the original semantics and assess t
 
 ### Related Invariants
 
-None identified.
+- CI-10
 
 ---
 
@@ -129,7 +130,7 @@ Transformation-application provenance
 
 ### Statement
 
-A translated record MUST identify the application or agent that performed the transformation.
+A translated record **MUST** identify the application or agent that performed the transformation.
 
 ### Rationale
 
@@ -158,7 +159,7 @@ Transformation-time provenance
 
 ### Statement
 
-A translated record MUST record when the transformation occurred.
+A translated record **MUST** record when the transformation occurred.
 
 ### Rationale
 
@@ -187,7 +188,7 @@ Reversibility disclosure
 
 ### Statement
 
-A translated record MUST state whether the translation is reversible.
+A translated record **MUST** state whether the translation is reversible.
 
 ### Rationale
 
@@ -216,7 +217,7 @@ Omitted-information disclosure
 
 ### Statement
 
-A translated record MUST disclose any source information omitted during translation.
+A translated record **MUST** disclose any source information omitted during translation.
 
 ### Rationale
 
@@ -245,7 +246,7 @@ No silent replacement of source records
 
 ### Statement
 
-A translation operation MUST NOT silently replace the source record.
+A translation operation **MUST NOT** silently replace the source record.
 
 ### Rationale
 
@@ -274,7 +275,7 @@ Explicit authority for source replacement
 
 ### Statement
 
-A translated record MAY replace its source record only where the controller explicitly authorises the replacement.
+A translated record **MAY** replace its source record only where the controller explicitly authorises the replacement.
 
 ### Rationale
 
@@ -287,7 +288,8 @@ The authorisation should be explicit and recorded through the repository operati
 
 ### Related Invariants
 
-None identified.
+- CI-02
+- CI-06
 
 ---
 
