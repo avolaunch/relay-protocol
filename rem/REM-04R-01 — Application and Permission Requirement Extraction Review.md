@@ -39,11 +39,11 @@ The review does not redesign the Application and Permission Model or resolve ope
 
 | Part | Source sections | Requirement range | Review status |
 |---|---:|---:|---|
-| Part 1 | 1–5 | REM-04-001–070 | Covered; finding recorded below |
-| Part 2 | 6–10 | REM-04-071–146 | Covered; findings recorded below |
-| Part 3 | 11–15 | REM-04-147–211 | Covered |
-| Part 4 | 16–20 | REM-04-212–269 | Covered; finding recorded below |
-| Part 5 | 21–25 | REM-04-270–322 | Covered; findings recorded below |
+| Part 1 | 1–5 | REM-04-001–069 | Covered; finding recorded below |
+| Part 2 | 6–10 | REM-04-070–148 | Covered; findings recorded below |
+| Part 3 | 11–15 | REM-04-149–212 | Covered |
+| Part 4 | 16–20 | REM-04-213–273 | Covered; finding recorded below |
+| Part 5 | 21–25 | REM-04-274–322 | Covered; findings recorded below |
 | Part 6 | 26–30 | REM-04-323–390 | Covered; finding recorded below |
 | Part 7 | 31–35 | REM-04-391–439 | Covered; findings recorded below |
 | Part 8 | 36–40 | REM-04-440–494 | Covered; findings recorded below |
