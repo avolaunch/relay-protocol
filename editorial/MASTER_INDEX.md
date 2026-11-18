@@ -205,9 +205,12 @@ Founder disposition carries the ten Section 46 questions forward as explicit non
 
 ## EA-05-04 — Application and Permission
 
-No EA-05-04 Requirements Catalogue files are presently committed.
+Committed catalogue artefacts:
 
-**Catalogue status:** ready for generation. REM-04 Parts 1–15 and both REM-04R review artefacts are complete and verified.
+- `editorial/EA-05-04 Part 1 — Application and Permission Requirements Catalogue.md`
+- `editorial/EA-05-04 Part 2 — Application and Permission Requirements Catalogue.md`
+
+**Catalogue status:** in progress through source Section 10 and `REL-APP-058`. REM-04 Parts 1–15 and both REM-04R review artefacts are complete and verified.
 
 ## EA-05-05 — Relationship
 
@@ -281,7 +284,7 @@ No separate consolidated `EA-05-05 ... v1.0` file is presently committed; Parts 
 - EA-05-01 Identity — catalogue parts and consolidated v1.0 present; legacy extraction regeneration remains pending.
 - EA-05-02 Repository — catalogue parts and consolidated v1.0 present; legacy extraction regeneration remains pending.
 - EA-05-03 Record — **canonical v1.0**; Parts 1–45, EA-05R-03 review and consolidated catalogue present.
-- EA-05-04 Application and Permission — not started; verified extraction is ready for catalogue generation.
+- EA-05-04 Application and Permission — in progress; Parts 1–2 cover Sections 1–10 and `REL-APP-001` through `REL-APP-058`.
 - EA-05-05 Relationship — **complete through Part 27 / `REL-REL-432`**.
 - EA-05-06 through EA-05-15 — not started because corresponding REM extraction has not yet been completed.
 
@@ -289,11 +292,11 @@ No separate consolidated `EA-05-05 ... v1.0` file is presently committed; Parts 
 
 EA-05 is **in progress**, not planned and not complete.
 
-Completed catalogue work exists for Identity, Repository, Record and Relationship. Application/Permission has completed and verified extraction and is ready for catalogue generation. Models 06–15 have not yet entered requirement extraction.
+Completed catalogue work exists for Identity, Repository, Record and Relationship. Application/Permission has completed and verified extraction and catalogue generation is in progress through Section 10. Models 06–15 have not yet entered requirement extraction.
 
 ## Remaining Editorial Work
 
-The next unfinished workstream in dependency/order terms is **EA-05-04 Application and Permission Requirements Catalogue generation** from the verified REM-04 extraction.
+The next unfinished workstream in dependency/order terms is continuation of **EA-05-04 Application and Permission Requirements Catalogue generation**, beginning with source Section 11 and `REM-04-149`.
 
 The later REM-06 through REM-15 extraction programme remains outstanding. EA-06 and EA-07 remain planned downstream audits and should not begin until the requirements-audit state is sufficiently complete.
 
@@ -466,7 +469,7 @@ The design corpus has completed architectural design and all 16 design notes are
 
 The editorial programme has established structural integrity, canonical terminology, constitutional and architectural invariants, and editorial decisions. EA-05 has progressed materially beyond its original planned state: Identity, Repository and Record have consolidated canonical v1.0 catalogues; Relationship has completed extraction, review, remediation verification and catalogue generation through `REL-REL-432`; and Application/Permission has completed extraction, review and remediation verification through `REM-04-831`.
 
-The requirements audit remains incomplete across the full design corpus because EA-05-04 catalogue generation remains outstanding and REM-06 through REM-15 have not yet been generated.
+The requirements audit remains incomplete across the full design corpus because EA-05-04 catalogue generation is in progress and REM-06 through REM-15 have not yet been generated.
 
 ---
 
@@ -478,7 +481,7 @@ Proceed to:
 
 Objective:
 
-Generate the Application and Permission Requirements Catalogue from the verified REM-04 Parts 1–15, preserving source strength, qualifications, traceability, explicit non-normative exclusions and the provisional status of Section 69.
+Continue the Application and Permission Requirements Catalogue from source Section 11 and `REM-04-149`, preserving source strength, qualifications, traceability, explicit non-normative exclusions and the provisional status of Section 69.
 
 This is the next verified extraction series awaiting catalogue generation.
 
