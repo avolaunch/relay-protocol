@@ -80,7 +80,7 @@ EA-05 is being executed subsystem by subsystem. Requirement Extraction Matrices 
 | REM-01 | `01-identity-model.md` | No standalone REM-01 extraction files present | **Legacy – regeneration pending** |
 | REM-02 | `02-repository-model.md` | No standalone REM-02 extraction files present | **Legacy – regeneration pending** |
 | REM-03 | `03-record-model.md` | Parts 1–10 present; `REM-03-001`–`REM-03-483` | **Complete and verified** |
-| REM-04 | `04-application-and-permission-model.md` | Parts 1–14 present; Sections 1–67 | Extraction complete; review pending |
+| REM-04 | `04-application-and-permission-model.md` | Parts 1–15 present; `REM-04-001`–`REM-04-831` | **Complete and verified** |
 | REM-05 | `05-relationship-model.md` | Parts 1–12 present; `REM-05-001`–`REM-05-673` | **Complete and verified** |
 | REM-06 | `06-migration-and-portability-model.md` | No REM-06 files present | Not started |
 | REM-07 | `07-commit-and-verification-model.md` | No REM-07 files present | Not started |
@@ -115,12 +115,13 @@ The reviewed extraction accounts for `REM-03-001` through `REM-03-483`. Illustra
 
 ### REM-04 — Application and Permission extraction files
 
-REM-04 consists of 14 committed parts covering source Sections 1–67:
+REM-04 consists of 15 committed parts covering source Sections 1–70 and the continuous range `REM-04-001` through `REM-04-831`.
 
 - Parts 1–13 cover five-section blocks from Sections 1–65;
-- Part 14 covers Sections 66–67.
+- Part 14 covers Sections 66–67;
+- Part 15 covers Sections 68–70.
 
-All 14 files are present under `rem/` and the extraction sequence is complete. No REM-04 extraction-review document is presently committed.
+The extraction was reviewed and remediated. It retains 134 illustrative entries as explicitly non-normative, keeps `REM-04-793`–`REM-04-804` as unresolved Open Design Issues, preserves `REM-04-805`–`REM-04-827` as **PROVISIONAL v0.1**, and treats `REM-04-831` as a non-normative model-boundary hand-off.
 
 ### REM-05 — Relationship extraction files
 
@@ -142,8 +143,15 @@ The extraction was subsequently reviewed and remediated. Its special-status acco
 | REM-01 | No standalone review present | Legacy – regeneration pending |
 | REM-02 | No standalone review present | Legacy – regeneration pending |
 | REM-03 | `REM-03R-01` review + `REM-03R-02` remediation verification | **Verified** |
-| REM-04 | No `REM-04R` review present | **Pending** |
+| REM-04 | `REM-04R-01` review + `REM-04R-02` remediation verification | **Verified** |
 | REM-05 | `REM-05R-01` review + `REM-05R-02` remediation verification | **Verified** |
+
+Committed REM-04 review artefacts:
+
+- `rem/REM-04R-01 — Application and Permission Requirement Extraction Review.md`
+- `rem/REM-04R-02 — Application and Permission Requirement Extraction Remediation Verification.md`
+
+`REM-04R-01` identified missing Sections 68–70, example promotion and Section 67 strength inflation. The extraction was remediated, and `REM-04R-02` verified complete coverage and catalogue readiness.
 
 Committed REM-05 review artefacts:
 
@@ -199,7 +207,7 @@ Founder disposition carries the ten Section 46 questions forward as explicit non
 
 No EA-05-04 Requirements Catalogue files are presently committed.
 
-**Catalogue status:** pending extraction review. REM-04 extraction Parts 1–14 are present, but no REM-04R review has yet been committed.
+**Catalogue status:** ready for generation. REM-04 Parts 1–15 and both REM-04R review artefacts are complete and verified.
 
 ## EA-05-05 — Relationship
 
@@ -258,14 +266,14 @@ No separate consolidated `EA-05-05 ... v1.0` file is presently committed; Parts 
 - REM-01 — **Legacy – regeneration pending**; no standalone extraction files present.
 - REM-02 — **Legacy – regeneration pending**; no standalone extraction files present.
 - REM-03 — **complete and verified**; Parts 1–10 present with `REM-03-001` through `REM-03-483`.
-- REM-04 — extraction complete; Parts 1–14 present.
+- REM-04 — **complete and verified**; Parts 1–15 present with `REM-04-001` through `REM-04-831`.
 - REM-05 — extraction complete; Parts 1–12 present and verified after remediation.
 - REM-06 through REM-15 — not started.
 
 ## Extraction Review / Verification
 
 - REM-03 — **complete and verified** through REM-03R-01 and REM-03R-02.
-- REM-04 — pending.
+- REM-04 — **complete and verified** through REM-04R-01 and REM-04R-02.
 - REM-05 — complete and verified through REM-05R-01 and REM-05R-02.
 
 ## Requirements Catalogue
@@ -273,7 +281,7 @@ No separate consolidated `EA-05-05 ... v1.0` file is presently committed; Parts 
 - EA-05-01 Identity — catalogue parts and consolidated v1.0 present; legacy extraction regeneration remains pending.
 - EA-05-02 Repository — catalogue parts and consolidated v1.0 present; legacy extraction regeneration remains pending.
 - EA-05-03 Record — **canonical v1.0**; Parts 1–45, EA-05R-03 review and consolidated catalogue present.
-- EA-05-04 Application and Permission — not started; blocked on REM-04 extraction review.
+- EA-05-04 Application and Permission — not started; verified extraction is ready for catalogue generation.
 - EA-05-05 Relationship — **complete through Part 27 / `REL-REL-432`**.
 - EA-05-06 through EA-05-15 — not started because corresponding REM extraction has not yet been completed.
 
@@ -281,11 +289,11 @@ No separate consolidated `EA-05-05 ... v1.0` file is presently committed; Parts 
 
 EA-05 is **in progress**, not planned and not complete.
 
-Completed catalogue work exists for Identity, Repository, Record and Relationship. Application/Permission has completed extraction but has not yet passed the review stage required by the current editorial method. Models 06–15 have not yet entered requirement extraction.
+Completed catalogue work exists for Identity, Repository, Record and Relationship. Application/Permission has completed and verified extraction and is ready for catalogue generation. Models 06–15 have not yet entered requirement extraction.
 
 ## Remaining Editorial Work
 
-The next unfinished workstream in dependency/order terms is **REM-04 extraction review** against `design-notes/04-application-and-permission-model.md`. After any required remediation and verification, EA-05-04 Application and Permission Requirements Catalogue generation can begin.
+The next unfinished workstream in dependency/order terms is **EA-05-04 Application and Permission Requirements Catalogue generation** from the verified REM-04 extraction.
 
 The later REM-06 through REM-15 extraction programme remains outstanding. EA-06 and EA-07 remain planned downstream audits and should not begin until the requirements-audit state is sufficiently complete.
 
@@ -456,9 +464,9 @@ AI-10 Exact Compliance Claims
 
 The design corpus has completed architectural design and all 16 design notes are present.
 
-The editorial programme has established structural integrity, canonical terminology, constitutional and architectural invariants, and editorial decisions. EA-05 has progressed materially beyond its original planned state: Identity, Repository and Record have consolidated canonical v1.0 catalogues; Relationship has completed extraction, review, remediation verification and catalogue generation through `REL-REL-432`; and Application/Permission has completed its extraction series awaiting review.
+The editorial programme has established structural integrity, canonical terminology, constitutional and architectural invariants, and editorial decisions. EA-05 has progressed materially beyond its original planned state: Identity, Repository and Record have consolidated canonical v1.0 catalogues; Relationship has completed extraction, review, remediation verification and catalogue generation through `REL-REL-432`; and Application/Permission has completed extraction, review and remediation verification through `REM-04-831`.
 
-The requirements audit remains incomplete across the full design corpus because REM-06 through REM-15 have not yet been generated and the REM-04 review-to-catalogue path remains unfinished.
+The requirements audit remains incomplete across the full design corpus because EA-05-04 catalogue generation remains outstanding and REM-06 through REM-15 have not yet been generated.
 
 ---
 
@@ -466,13 +474,13 @@ The requirements audit remains incomplete across the full design corpus because 
 
 Proceed to:
 
-**REM-04R-01 — Application and Permission Requirement Extraction Review**
+**EA-05-04 — Application and Permission Requirements Catalogue**
 
 Objective:
 
-Review all fourteen REM-04 extraction parts against `design-notes/04-application-and-permission-model.md`, verify complete section and numbering coverage, preserve normative strength and qualifications, identify unsupported promotion or omission, and determine whether targeted remediation is required before EA-05-04 catalogue generation.
+Generate the Application and Permission Requirements Catalogue from the verified REM-04 Parts 1–15, preserving source strength, qualifications, traceability, explicit non-normative exclusions and the provisional status of Section 69.
 
-This is the next completed extraction series that has not yet passed the established review stage.
+This is the next verified extraction series awaiting catalogue generation.
 
 ---
 
