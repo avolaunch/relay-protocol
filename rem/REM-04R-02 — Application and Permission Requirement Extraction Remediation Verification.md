@@ -117,11 +117,11 @@ Mandatory equivalents elsewhere in the source remain mandatory in their independ
 
 | Part | Source sections | Identifier range |
 |---|---:|---:|
-| Part 1 | 1–5 | REM-04-001–070 |
-| Part 2 | 6–10 | REM-04-071–146 |
-| Part 3 | 11–15 | REM-04-147–211 |
-| Part 4 | 16–20 | REM-04-212–269 |
-| Part 5 | 21–25 | REM-04-270–322 |
+| Part 1 | 1–5 | REM-04-001–069 |
+| Part 2 | 6–10 | REM-04-070–148 |
+| Part 3 | 11–15 | REM-04-149–212 |
+| Part 4 | 16–20 | REM-04-213–273 |
+| Part 5 | 21–25 | REM-04-274–322 |
 | Part 6 | 26–30 | REM-04-323–390 |
 | Part 7 | 31–35 | REM-04-391–439 |
 | Part 8 | 36–40 | REM-04-440–494 |
