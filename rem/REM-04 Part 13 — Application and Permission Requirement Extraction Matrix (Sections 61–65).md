@@ -162,12 +162,14 @@ Standing rules may prohibit, permit, require confirmation for or time-limit part
 Section 62 example: “Never allow general model training.”
 
 **Requirement**  
-A standing policy MAY prohibit Permission Requests that include general model training.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-AI governance; policy enforcement; privacy.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 This is an illustrative policy capability rather than a universal default.
 
 ---
@@ -178,12 +180,14 @@ This is an illustrative policy capability rather than a universal default.
 Section 62 example: “Allow public-profile readers automatically.”
 
 **Requirement**  
-A standing policy MAY pre-authorise automatic approval of low-risk public-profile reading requests.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Policy enforcement; automatic approval; low-risk access.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Automatic approval remains subject to the source requirement that it be limited to low-risk, pre-authorised conditions.
 
 ---
@@ -194,12 +198,14 @@ Automatic approval remains subject to the source requirement that it be limited 
 Section 62 example: “Require confirmation for deletion.”
 
 **Requirement**  
-A standing policy MAY require explicit confirmation before granting or exercising deletion authority.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-High-risk action; policy enforcement; user confirmation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The confirmation requirement may apply at grant time, operation time or both.
 
 ---
@@ -210,12 +216,14 @@ The confirmation requirement may apply at grant time, operation time or both.
 Section 62 example: “Expire inactive grants after 90 days.”
 
 **Requirement**  
-A standing policy MAY cause inactive grants to expire after a defined period.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Grant lifecycle; policy enforcement; inactivity management.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The exact period is policy-defined; 90 days is illustrative.
 
 ---
@@ -226,12 +234,14 @@ The exact period is policy-defined; 90 days is illustrative.
 Section 62 example: “Block unverified applications from private records.”
 
 **Requirement**  
-A standing policy MAY prevent unverified applications from receiving access to private records.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Trust policy; verification; private-data protection.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Verification status must still be interpreted according to what was actually verified, not as a universal guarantee of trustworthiness.
 
 ---

@@ -399,7 +399,7 @@ The scenario is cumulative. Passing only individual steps is insufficient if the
 Section 67, Initial request: Application A requests read-public-profile, read-posts, create-posts, update-posts, delete-posts, read-private-drafts and recommendation-model training capabilities.
 
 **Requirement**  
-The Permission Request MUST represent each requested resource, action and AI purpose distinctly enough for the user to approve or deny them independently where practical.
+The Permission Request SHOULD represent each requested resource, action and AI purpose distinctly enough for the user to approve or deny them independently where practical.
 
 **Classification**  
 Permission request; granularity; compliance scenario.
@@ -415,7 +415,7 @@ The scenario deliberately combines ordinary read and write actions with deletion
 Section 67, Partial approval: the user approves profile reading, post reading, post creation and post updating while denying deletion, private-draft reading and recommendation-model training.
 
 **Requirement**  
-The implementation MUST support approval of a proper subset of a Permission Request without requiring approval of the full request.
+The implementation SHOULD support approval of a proper subset of a Permission Request without requiring approval of the full request.
 
 **Classification**  
 Granular consent; partial approval; compliance scenario.
@@ -431,7 +431,7 @@ The application may operate with reduced capability, explain unavailable feature
 Section 67, Partial approval: the user denies “Delete posts.”
 
 **Requirement**  
-Where the user denies post-deletion authority, the issued Permission Grant MUST exclude the delete action.
+Where the user denies post-deletion authority, the issued Permission Grant SHOULD exclude the delete action.
 
 **Classification**  
 Grant construction; denied scope; compliance scenario.
@@ -447,7 +447,7 @@ The later unauthorised-deletion test depends on this exclusion being machine-enf
 Section 67, Partial approval: the user denies “Read private drafts.”
 
 **Requirement**  
-Where the user denies access to private drafts, the issued Permission Grant MUST exclude authority to read those drafts.
+Where the user denies access to private drafts, the issued Permission Grant SHOULD exclude authority to read those drafts.
 
 **Classification**  
 Private-data access; denied scope; compliance scenario.
@@ -463,7 +463,7 @@ Approval to read posts generally must not be broadened to include private drafts
 Section 67, Partial approval: the user denies “Train a recommendation model.”
 
 **Requirement**  
-Where the user denies recommendation-model training, the issued Permission Grant MUST exclude that AI training purpose.
+Where the user denies recommendation-model training, the issued Permission Grant SHOULD exclude that AI training purpose.
 
 **Classification**  
 AI governance; denied purpose; compliance scenario.
@@ -479,7 +479,7 @@ Read access to profile or post data does not override this denial.
 Section 67, Partial approval: “The issued grant contains only the approved capabilities.”
 
 **Requirement**  
-The Permission Grant issued after partial approval MUST contain only the capabilities expressly approved by the user.
+The Permission Grant issued after partial approval SHOULD contain only the capabilities expressly approved by the user.
 
 **Classification**  
 Consent fidelity; grant limitation; compliance scenario.
@@ -495,7 +495,7 @@ This is the scenario-level application of Invariant 2.
 Section 67, Record creation: “The repository records... the user as authorising identity.”
 
 **Requirement**  
-When Application A creates a post under the grant, the repository MUST record the user as the authorising Relay Identity.
+When Application A creates a post under the grant, the repository SHOULD record the user as the authorising Relay Identity.
 
 **Classification**  
 Repository provenance; authorisation attribution; compliance scenario.
@@ -511,7 +511,7 @@ The application’s role as submitter does not make it the authorising identity.
 Section 67, Record creation: “The repository records... Application A as submitter.”
 
 **Requirement**  
-When Application A creates a post under the grant, the repository MUST record Application A as the submitting application.
+When Application A creates a post under the grant, the repository SHOULD record Application A as the submitting application.
 
 **Classification**  
 Submission provenance; application attribution; compliance scenario.
@@ -527,7 +527,7 @@ This records how the operation entered the repository without transferring autho
 Section 67, Record creation: “The repository records... the Permission Grant used.”
 
 **Requirement**  
-When Application A creates a post under the grant, the repository MUST record or retain a verifiable reference to the Permission Grant used for the operation.
+When Application A creates a post under the grant, the repository SHOULD record or retain a verifiable reference to the Permission Grant used for the operation.
 
 **Classification**  
 Grant traceability; auditability; compliance scenario.
@@ -543,7 +543,7 @@ The grant reference supports later inspection of whether the operation fell with
 Section 67, Unauthorised deletion attempt: “The repository rejects the operation because deletion was not granted.”
 
 **Requirement**  
-The repository MUST reject Application A’s attempt to delete the post when the applicable Permission Grant does not include deletion authority.
+The repository SHOULD reject Application A’s attempt to delete the post when the applicable Permission Grant does not include deletion authority.
 
 **Classification**  
 Runtime authorisation; enforcement; compliance scenario.
@@ -559,7 +559,7 @@ Successful creation or update of the record does not imply deletion authority.
 Section 67, Manifest change: “Application A later changes its policy to permit general model training. The existing grant does not automatically expand.”
 
 **Requirement**  
-A manifest or policy change permitting general model training MUST NOT automatically expand an existing Permission Grant.
+A manifest or policy change permitting general model training SHOULD NOT automatically expand an existing Permission Grant.
 
 **Classification**  
 Manifest drift; grant stability; compliance scenario.
@@ -575,7 +575,7 @@ The grant remains bounded by the purpose approved when it was issued.
 Section 67, Manifest change: “The user must review and approve the changed purpose.”
 
 **Requirement**  
-Before Application A may use previously accessible data for the changed model-training purpose, the user MUST review and approve that changed purpose through re-authorisation.
+Before Application A may use previously accessible data for the changed model-training purpose, the user SHOULD review and approve that changed purpose through re-authorisation.
 
 **Classification**  
 Purpose limitation; re-authorisation; compliance scenario.
@@ -591,7 +591,7 @@ The implementation must not rely on the earlier approval for materially new AI b
 Section 67, Revocation: after revocation, “Application A can no longer... obtain new tokens.”
 
 **Requirement**  
-After the user revokes Application A, the authorisation system MUST NOT issue new access tokens or equivalent active authority to Application A under the revoked grant.
+After the user revokes Application A, the authorisation system SHOULD NOT issue new access tokens or equivalent active authority to Application A under the revoked grant.
 
 **Classification**  
 Revocation effects; token issuance; compliance scenario.
@@ -607,7 +607,7 @@ Refresh or renewal authority associated with the revoked grant must also cease t
 Section 67, Revocation: after revocation, “Application A can no longer... submit updates.”
 
 **Requirement**  
-After the user revokes Application A, the repository MUST reject new update submissions made under the revoked authority.
+After the user revokes Application A, the repository SHOULD reject new update submissions made under the revoked authority.
 
 **Classification**  
 Revocation enforcement; repository submissions; compliance scenario.
@@ -623,7 +623,7 @@ The rule applies to future operations and does not invalidate canonical operatio
 Section 67, Revocation: after revocation, “Application A can no longer... receive private events.”
 
 **Requirement**  
-After the user revokes Application A, private repository event delivery to Application A under the revoked authority MUST cease.
+After the user revokes Application A, private repository event delivery to Application A under the revoked authority SHOULD cease.
 
 **Classification**  
 Revocation enforcement; event subscriptions; compliance scenario.
@@ -639,7 +639,7 @@ Public events may remain available only under an independent applicable public-a
 Section 67, Revocation: “The post remains in the repository.”
 
 **Requirement**  
-Revocation of Application A MUST NOT remove the post that was validly created under the grant.
+Revocation of Application A SHOULD NOT remove the post that was validly created under the grant.
 
 **Classification**  
 Record continuity; revocation semantics; compliance scenario.
@@ -655,7 +655,7 @@ The post remains under repository and user authority and may later be accessed b
 Section 67, Replacement: “Application B receives permission to read and update posts.”
 
 **Requirement**  
-The model MUST allow Application B to receive a valid Permission Grant to read and update the user’s existing posts independently of Application A.
+The model SHOULD allow Application B to receive a valid Permission Grant to read and update the user’s existing posts independently of Application A.
 
 **Classification**  
 Application replacement; new grant; compliance scenario.
@@ -671,7 +671,7 @@ Application B’s authority derives from its own grant, not from transfer of App
 Section 67, Replacement: “Application B opens and edits the post originally created through Application A.”
 
 **Requirement**  
-Application B MUST be able to open and edit the post originally created through Application A when Application B holds the required valid authority and the record schema permits the operation.
+Application B SHOULD be able to open and edit the post originally created through Application A when Application B holds the required valid authority and the record schema permits the operation.
 
 **Classification**  
 Application interoperability; record continuity; compliance scenario.
@@ -687,7 +687,7 @@ The originating application does not retain exclusive control over the record.
 Section 67, Replacement: “No export, copying or account recreation is required.”
 
 **Requirement**  
-Replacing Application A with Application B MUST NOT require the user to export and re-import, duplicate or otherwise copy the underlying repository records merely to continue using them.
+Replacing Application A with Application B SHOULD NOT require the user to export and re-import, duplicate or otherwise copy the underlying repository records merely to continue using them.
 
 **Classification**  
 Application replaceability; repository continuity; anti-lock-in.
@@ -703,7 +703,7 @@ Applications operate against the continuing repository state rather than owning 
 Section 67, Replacement: “No export, copying or account recreation is required.”
 
 **Requirement**  
-Replacing Application A with Application B MUST NOT require recreation of the Relay Identity, repository account or underlying repository state.
+Replacing Application A with Application B SHOULD NOT require recreation of the Relay Identity, repository account or underlying repository state.
 
 **Classification**  
 Identity continuity; application replaceability; anti-lock-in.
@@ -719,7 +719,7 @@ Application replacement changes the service interface and delegated authority, n
 Section 67, conclusion: “If all these actions occur while preserving user authority and application replaceability, the implementation satisfies the basic Relay Application and Permission objective.”
 
 **Requirement**  
-The compliance scenario MUST be completed without transferring, weakening or bypassing the user’s underlying authority over the Relay Identity, Repository and records.
+The compliance scenario SHOULD be completed without transferring, weakening or bypassing the user’s underlying authority over the Relay Identity, Repository and records.
 
 **Classification**  
 User authority; end-to-end compliance; acceptance criterion.
@@ -735,7 +735,7 @@ A technically functioning scenario does not satisfy the objective if the applica
 Section 67, conclusion: “If all these actions occur while preserving user authority and application replaceability, the implementation satisfies the basic Relay Application and Permission objective.”
 
 **Requirement**  
-The compliance scenario MUST preserve the user’s ability to replace one application with another without losing or recreating the underlying repository state.
+The compliance scenario SHOULD preserve the user’s ability to replace one application with another without losing or recreating the underlying repository state.
 
 **Classification**  
 Application replaceability; end-to-end compliance; acceptance criterion.
@@ -770,7 +770,7 @@ Replaceability is demonstrated when Application B can operate on the existing po
 
 - Section 66’s “must always remain true” statement is preserved through `MUST` and `MUST NOT` invariant requirements.
 - Section 67’s statement that a basic implementation “should pass” the test is preserved as a `SHOULD` at the scenario level.
-- Individual behaviours stated as required outcomes within the scenario use normative language sufficient to make the test executable and auditable.
+- Individual scenario behaviours use `SHOULD` or `SHOULD NOT` so that the decomposed test preserves the source-level recommendation.
 
 ## Editorial verification
 

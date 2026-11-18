@@ -532,12 +532,14 @@ This attribution is operational provenance, not a transfer of authorship, owners
 Section 48 example: `"authorisedBy": "rid:relay:alice"`.
 
 **Requirement**  
-Application-mediated repository changes SHOULD identify the Relay Identity that authorised the operation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Authority attribution; provenance; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The authorising identity remains distinct from the submitting application.
 
 ---
@@ -548,12 +550,14 @@ The authorising identity remains distinct from the submitting application.
 Section 48 example: `"submittedBy": "rid:app:writing-client"`.
 
 **Requirement**  
-Application-mediated repository changes SHOULD identify the Application Identity that submitted the operation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Application attribution; provenance; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Submission attribution does not make the application the author or owner.
 
 ---
@@ -564,12 +568,14 @@ Submission attribution does not make the application the author or owner.
 Section 48 example: `"grant": "grant_01JX8K"`.
 
 **Requirement**  
-Application-mediated repository changes SHOULD identify or reference the Permission Grant under which the operation was authorised.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Authority traceability; provenance; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The repository must still validate that the grant was valid and sufficient at the time of acceptance.
 
 ---
@@ -580,12 +586,14 @@ The repository must still validate that the grant was valid and sufficient at th
 Section 48 example: `"installation": "install_72A"`.
 
 **Requirement**  
-Application-mediated repository changes SHOULD identify the specific installation where that distinction is available and relevant.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Installation attribution; provenance; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Installation attribution supports investigation and granular revocation.
 
 ---

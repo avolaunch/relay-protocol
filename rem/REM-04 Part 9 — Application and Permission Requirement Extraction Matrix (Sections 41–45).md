@@ -242,12 +242,14 @@ The canonical record remains governed by repository authority and the authorisin
 Section 42 example: “a post remains in the user’s repository.”
 
 **Requirement**  
-A canonical post created through a subsequently revoked application MUST remain in the user’s repository unless separately deleted through an authorised record operation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Record continuity; content persistence; application replaceability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The example illustrates the general rule that application revocation and record deletion are separate operations.
 
 ---
@@ -258,12 +260,14 @@ The example illustrates the general rule that application revocation and record 
 Section 42 example: “a project remains portable.”
 
 **Requirement**  
-A project record created through a subsequently revoked application MUST remain portable according to the Relay Record Model.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Portability; application replaceability; record continuity.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Revocation must not trap the project inside the application that created it.
 
 ---
@@ -274,12 +278,14 @@ Revocation must not trap the project inside the application that created it.
 Section 42 example: “a comment remains under the user’s authority.”
 
 **Requirement**  
-A comment created through a subsequently revoked application MUST remain under the authority of the authorising Relay Identity.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Record authority; authorship; application independence.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The originating application does not gain continuing ownership or control over the comment.
 
 ---
@@ -290,12 +296,14 @@ The originating application does not gain continuing ownership or control over t
 Section 42 example: “an imported archive remains available.”
 
 **Requirement**  
-An archive validly imported through an application MUST remain available after that application is revoked, subject to repository policy and any separate deletion decision.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Import continuity; repository state; application replaceability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The application’s loss of authority does not reverse a completed, valid import.
 
 ---
@@ -356,12 +364,14 @@ The revised grant may preserve still-approved capabilities while removing others
 Section 43 example: reducing “Read, create, update and delete posts” to “Read and create posts.”
 
 **Requirement**  
-A scope-reduction operation MAY remove one or more previously granted actions while retaining other approved actions.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Action scope; grant modification; granular control.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The example is illustrative and does not limit scope reduction to action-level changes.
 
 ---

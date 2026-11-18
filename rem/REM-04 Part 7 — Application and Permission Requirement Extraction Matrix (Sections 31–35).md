@@ -178,12 +178,14 @@ A capability token should not imply broad account-level authority unless such br
 Section 32 example: “May update post_123 until 14:00”.
 
 **Requirement**  
-A capability token MAY restrict authority to a specific record or other protocol object.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Object-level scope; capability restriction.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The example is illustrative rather than a fixed token syntax.
 
 ---
@@ -194,12 +196,14 @@ The example is illustrative rather than a fixed token syntax.
 Section 32 example: “May update post_123 until 14:00”.
 
 **Requirement**  
-A capability token MAY restrict authority to a specific operation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Action scope; capability restriction.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Authority to perform one operation must not silently imply authority to perform related operations.
 
 ---
@@ -210,12 +214,14 @@ Authority to perform one operation must not silently imply authority to perform 
 Section 32 example: “May update post_123 until 14:00”.
 
 **Requirement**  
-A capability token MAY include a defined expiration time or other temporal boundary.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Duration; capability lifecycle.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Time-limited authority is more precise than indefinite authority where the intended task is temporary.
 
 ---
@@ -226,12 +232,14 @@ Time-limited authority is more precise than indefinite authority where the inten
 Section 32: the specific capability example “is more precise than: May update all posts indefinitely.”
 
 **Requirement**  
-Where practical, implementations SHOULD prefer capability authority that is limited by object, operation and duration over broad indefinite authority.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Least privilege; authorisation precision; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 This requirement reflects the source’s comparison between a narrowly bounded capability and broad indefinite permission.
 
 ---
@@ -242,12 +250,14 @@ This requirement reflects the source’s comparison between a narrowly bounded c
 Section 32: “Capability tokens may be useful for: collaborative editing...”
 
 **Requirement**  
-Capability tokens MAY be used to authorise bounded collaborative-editing operations.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Use case; collaboration; capability access.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The capability should identify the relevant object, permitted action and applicable duration or conditions.
 
 ---
@@ -258,12 +268,14 @@ The capability should identify the relevant object, permitted action and applica
 Section 32: “Capability tokens may be useful for... temporary sharing...”
 
 **Requirement**  
-Capability tokens MAY be used to authorise temporary sharing of a record or resource.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Use case; temporary access; sharing.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Temporary sharing should not be treated as permanent audience membership unless separately authorised.
 
 ---
@@ -274,12 +286,14 @@ Temporary sharing should not be treated as permanent audience membership unless 
 Section 32: “Capability tokens may be useful for... one-time publication...”
 
 **Requirement**  
-Capability tokens MAY be used to authorise one-time publication operations.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Use case; one-time authority; publication.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The capability should become unusable after successful exercise or another defined invalidation event.
 
 ---
@@ -290,12 +304,14 @@ The capability should become unusable after successful exercise or another defin
 Section 32: “Capability tokens may be useful for... restricted record access...”
 
 **Requirement**  
-Capability tokens MAY be used to authorise access to specifically identified restricted records.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Use case; restricted access; access control.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Possession and validation of the capability must not imply access to unrelated restricted records.
 
 ---
@@ -306,12 +322,14 @@ Possession and validation of the capability must not imply access to unrelated r
 Section 32: “Capability tokens may be useful for... delegated workflow steps.”
 
 **Requirement**  
-Capability tokens MAY be used to authorise a bounded delegated step within a larger workflow.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Use case; workflow delegation; capability access.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The delegated step should not grant authority over the entire workflow unless explicitly authorised.
 
 ---
@@ -502,12 +520,14 @@ Multiple installations must not automatically be treated as multiple independent
 Section 34 examples: “web session”.
 
 **Requirement**  
-The installation model MAY represent a web session as a distinct application installation or session context.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Installation type; web access.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The example is illustrative and does not prescribe a fixed installation identifier format.
 
 ---
@@ -518,12 +538,14 @@ The example is illustrative and does not prescribe a fixed installation identifi
 Section 34 examples: “mobile phone”.
 
 **Requirement**  
-The installation model MAY represent a mobile-device installation separately from other installations of the same application.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Installation type; device-specific access.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Separate representation enables installation-specific inspection and revocation.
 
 ---
@@ -534,12 +556,14 @@ Separate representation enables installation-specific inspection and revocation.
 Section 34 examples: “desktop application”.
 
 **Requirement**  
-The installation model MAY represent a desktop application installation separately from other installations.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Installation type; desktop access.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The installation remains associated with the same stable Application Identity unless a distinct application identity is warranted.
 
 ---
@@ -550,12 +574,14 @@ The installation remains associated with the same stable Application Identity un
 Section 34 examples: “browser extension”.
 
 **Requirement**  
-The installation model MAY represent a browser-extension installation separately from other application installations.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Installation type; browser integration.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Browser-extension installations may have distinct device, browser and session risk characteristics.
 
 ---
@@ -566,12 +592,14 @@ Browser-extension installations may have distinct device, browser and session ri
 Section 34 examples: “server-side background worker”.
 
 **Requirement**  
-The installation model MAY represent a server-side background worker as a distinct installation or execution context.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Installation type; background service.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 A server-side worker may operate without an active user session and therefore requires explicit background-access treatment.
 
 ---
@@ -696,12 +724,14 @@ Background access means the application may act while the user is not actively i
 Section 35 examples: “syncing records”.
 
 **Requirement**  
-A grant MAY authorise background access for record synchronisation where that purpose is explicitly declared and approved.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Background-use case; synchronisation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The grant should remain limited to the records, actions and frequency necessary for synchronisation.
 
 ---
@@ -712,12 +742,14 @@ The grant should remain limited to the records, actions and frequency necessary 
 Section 35 examples: “generating a daily digest”.
 
 **Requirement**  
-A grant MAY authorise background access for scheduled digest generation where that purpose is explicitly declared and approved.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Background-use case; scheduled processing.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The permission should state the relevant data scope and processing cadence where practical.
 
 ---
@@ -728,12 +760,14 @@ The permission should state the relevant data scope and processing cadence where
 Section 35 examples: “monitoring repository events”.
 
 **Requirement**  
-A grant MAY authorise background access for monitoring repository events where the event scope and purpose are approved.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Background-use case; event subscription.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Event monitoring should not imply unrestricted read or write access to repository content.
 
 ---
@@ -744,12 +778,14 @@ Event monitoring should not imply unrestricted read or write access to repositor
 Section 35 examples: “maintaining a search index”.
 
 **Requirement**  
-A grant MAY authorise background access for maintaining a search index where indexing, retention and scope are explicitly approved.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Background-use case; indexing; derived data.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Indexing may create derived representations and should remain consistent with the approved purpose and retention declarations.
 
 ---
@@ -760,12 +796,14 @@ Indexing may create derived representations and should remain consistent with th
 Section 35 examples: “processing incoming replies”.
 
 **Requirement**  
-A grant MAY authorise background access for processing incoming replies where the relevant event and record scopes are approved.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Background-use case; messaging and interaction processing.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Processing replies does not automatically authorise unrelated repository operations.
 
 ---

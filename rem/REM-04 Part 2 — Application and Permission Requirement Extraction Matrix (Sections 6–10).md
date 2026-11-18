@@ -370,12 +370,14 @@ A material change is one that could affect application identity continuity, secu
 Section 7.1, examples of material changes: “controller change”.
 
 **Requirement**  
-A change of application controller MUST create a new manifest version.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Controller change; accountability; manifest versioning.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 A controller change may also require additional continuity verification beyond ordinary versioning.
 
 ---
@@ -386,12 +388,14 @@ A controller change may also require additional continuity verification beyond o
 Section 7.1, examples of material changes: “new domain”.
 
 **Requirement**  
-Adding a new application domain MUST create a new manifest version.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Domain security; manifest versioning.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The new domain should be verified before being represented as verified or used for security-sensitive authorisation flows.
 
 ---
@@ -402,12 +406,14 @@ The new domain should be verified before being represented as verified or used f
 Section 7.1, examples of material changes: “new callback location”.
 
 **Requirement**  
-Adding or materially changing a redirect or callback location MUST create a new manifest version.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Authorisation flow security; manifest versioning.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Callback changes can alter where authorisation responses or credentials are delivered and therefore require traceable versioning.
 
 ---
@@ -418,12 +424,14 @@ Callback changes can alter where authorisation responses or credentials are deli
 Section 7.1, examples of material changes: “changed retention policy”.
 
 **Requirement**  
-A material change to the application’s data-retention policy MUST create a new manifest version.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Retention; privacy; manifest versioning.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Existing grants must not automatically be interpreted as approval of newly expanded retention practices.
 
 ---
@@ -434,12 +442,14 @@ Existing grants must not automatically be interpreted as approval of newly expan
 Section 7.1, examples of material changes: “changed AI usage”.
 
 **Requirement**  
-A material change to declared AI processing or model-training practices MUST create a new manifest version.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-AI use; purpose limitation; manifest versioning.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Expanded AI use may require a new or amended Permission Request rather than relying on an earlier grant.
 
 ---
@@ -450,12 +460,14 @@ Expanded AI use may require a new or amended Permission Request rather than rely
 Section 7.1, examples of material changes: “key rotation”.
 
 **Requirement**  
-Application key rotation MUST be reflected in a new manifest version.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Key management; cryptographic continuity; manifest versioning.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The new version must preserve verifiable continuity between the Application Identity and its replacement keys.
 
 ---
@@ -466,12 +478,14 @@ The new version must preserve verifiable continuity between the Application Iden
 Section 7.1, examples of material changes: “expanded permission catalogue”.
 
 **Requirement**  
-Expanding the catalogue of permissions an application may request MUST create a new manifest version.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Permission transparency; manifest versioning; least privilege.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Catalogue expansion does not alter existing grants or authorise the newly listed permissions.
 
 ---
@@ -580,12 +594,14 @@ Verification status is optional metadata and must not be confused with a univers
 Section 8, example status: “unverified”.
 
 **Requirement**  
-The verification-status model MAY represent an application as unverified.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Verification status; trust transparency.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Unverified does not necessarily mean malicious; it indicates that specified verification steps have not been established.
 
 ---
@@ -596,12 +612,14 @@ Unverified does not necessarily mean malicious; it indicates that specified veri
 Section 8, example status: “domain-verified”.
 
 **Requirement**  
-The verification-status model MAY represent that control of one or more application domains has been verified.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Verification status; domain control.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Domain verification proves only the fact represented by the applicable verification process.
 
 ---
@@ -612,12 +630,14 @@ Domain verification proves only the fact represented by the applicable verificat
 Section 8, example status: “controller-verified”.
 
 **Requirement**  
-The verification-status model MAY represent that the identity of the application controller has been verified.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Verification status; controller identity.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Controller verification does not guarantee secure or compliant future behaviour.
 
 ---
@@ -628,12 +648,14 @@ Controller verification does not guarantee secure or compliant future behaviour.
 Section 8, example status: “security-reviewed”.
 
 **Requirement**  
-The verification-status model MAY represent that the application has completed a defined security review.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Verification status; security assurance.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The review scope, reviewer and date should be discoverable where necessary to explain the meaning of the status.
 
 ---
@@ -644,12 +666,14 @@ The review scope, reviewer and date should be discoverable where necessary to ex
 Section 8, example status: “ecosystem-certified”.
 
 **Requirement**  
-The verification-status model MAY represent that the application has received a defined ecosystem certification.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Verification status; certification.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Certification must be attributable to the relevant certifying authority and criteria.
 
 ---
@@ -660,12 +684,14 @@ Certification must be attributable to the relevant certifying authority and crit
 Section 8, example status: “suspended”.
 
 **Requirement**  
-The verification-status model MAY represent that an application is suspended.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Application status; enforcement; risk management.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 A provider should not present a suspended application as ordinarily verified or available without clearly indicating the suspension.
 
 ---
@@ -676,12 +702,14 @@ A provider should not present a suspended application as ordinarily verified or 
 Section 8, example status: “revoked”.
 
 **Requirement**  
-The verification-status model MAY represent that an application’s verification or recognised authority has been revoked.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Application status; revocation; trust metadata.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The precise operational consequences depend on the authority and status being revoked.
 
 ---
@@ -1144,12 +1172,14 @@ A provider may issue a narrower grant than requested. It may not silently expand
 Section 10 example: grant field `id`.
 
 **Requirement**  
-A Permission Grant SHOULD have a stable identifier that allows it to be referenced, inspected and revoked.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Grant identification; lifecycle management.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The source example is illustrative, but a stable grant reference is necessary to operationalise inspectability and revocation.
 
 ---
@@ -1160,12 +1190,14 @@ The source example is illustrative, but a stable grant reference is necessary to
 Section 10 example: grant field `issuer`.
 
 **Requirement**  
-A Permission Grant MUST identify the Relay Identity that issued the authorisation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Grant attribution; issuer identification.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The issuer must correspond to the authority whose repository or identity resources are being delegated.
 
 ---
@@ -1176,12 +1208,14 @@ The issuer must correspond to the authority whose repository or identity resourc
 Section 10 example: grant field `application`.
 
 **Requirement**  
-A Permission Grant MUST identify the Application Identity receiving the authority.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Grant attribution; application identification.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Authority granted to one application must not automatically be transferable to another Application Identity.
 
 ---
@@ -1192,12 +1226,14 @@ Authority granted to one application must not automatically be transferable to a
 Section 10 example: grant field `issuedAt`.
 
 **Requirement**  
-A Permission Grant SHOULD record the time at which it was issued.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Temporal metadata; auditability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Issuance time supports validity checks, audit history and later interpretation of applicable manifest versions.
 
 ---
@@ -1208,12 +1244,14 @@ Issuance time supports validity checks, audit history and later interpretation o
 Section 10 example: grant field `expiresAt` and requirement to be time-bound where appropriate.
 
 **Requirement**  
-A Permission Grant SHOULD record an expiration time or an explicit indication that no fixed expiration applies.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Temporal scope; grant validity.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 A null or absent fixed expiry does not remove revocability.
 
 ---
@@ -1224,12 +1262,14 @@ A null or absent fixed expiry does not remove revocability.
 Section 10 example: `resources` with collection and action entries.
 
 **Requirement**  
-A Permission Grant MUST identify the resources and actions actually authorised.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Resource scope; action scope; least privilege.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The grant must be independently inspectable without requiring the application to reinterpret the original request.
 
 ---
@@ -1240,12 +1280,14 @@ The grant must be independently inspectable without requiring the application to
 Section 10 example: grant field `purpose`.
 
 **Requirement**  
-A Permission Grant MUST identify the purposes for which the granted authority may be exercised.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose limitation; consent integrity.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Use outside the approved purpose falls outside the grant even where the technical resource and action scope would otherwise permit it.
 
 ---
@@ -1256,12 +1298,14 @@ Use outside the approved purpose falls outside the grant even where the technica
 Section 10 example: `restrictions` including model training and onward sharing.
 
 **Requirement**  
-A Permission Grant MUST preserve any approved restrictions that limit use of the granted authority or resulting data.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Grant restrictions; privacy; purpose limitation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Restrictions may include prohibitions on model training, onward sharing, retention or other defined practices.
 
 ---

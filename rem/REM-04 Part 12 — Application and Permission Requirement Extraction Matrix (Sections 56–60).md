@@ -146,12 +146,14 @@ The absence of a visible client interface does not remove the service from proto
 Section 57, examples: “search indexer”.
 
 **Requirement**  
-A search indexer interacting with Relay data MUST be treated as an application actor where the Application and Permission Model applies.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Service-to-service application; indexing; accountability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Section 58 provides additional indexing-specific requirements.
 
 ---
@@ -162,12 +164,14 @@ Section 58 provides additional indexing-specific requirements.
 Section 57, examples: “moderation labeller”.
 
 **Requirement**  
-A moderation-labelling service interacting with Relay data MUST be treated as an application actor.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Service-to-service application; moderation; accountability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The service’s labels or outputs do not give it unrestricted access to the records it processes.
 
 ---
@@ -178,12 +182,14 @@ The service’s labels or outputs do not give it unrestricted access to the reco
 Section 57, examples: “backup service”.
 
 **Requirement**  
-A backup service interacting with a Relay Identity or Repository MUST be treated as an application actor.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Service-to-service application; backup; delegated access.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Backup purpose does not itself establish unlimited repository access or indefinite retention authority.
 
 ---
@@ -194,12 +200,14 @@ Backup purpose does not itself establish unlimited repository access or indefini
 Section 57, examples: “media transcoder”.
 
 **Requirement**  
-A media-transcoding service interacting with Relay records or blobs MUST be treated as an application actor.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Service-to-service application; media processing; accountability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Its grant should be limited to the required media objects and processing operations.
 
 ---
@@ -210,12 +218,14 @@ Its grant should be limited to the required media objects and processing operati
 Section 57, examples: “analytics processor”.
 
 **Requirement**  
-An analytics-processing service interacting with Relay data MUST be treated as an application actor.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Service-to-service application; analytics; accountability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Analytics purpose must not be used as a broad substitute for declared resources, actions, retention or onward sharing.
 
 ---
@@ -534,12 +544,14 @@ Delegation must be independently established and must not be inferred from ordin
 Section 59, examples: “parent or guardian”.
 
 **Requirement**  
-The model MAY represent a parent or guardian as a delegated consent authority where valid authority exists.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Delegated consent; guardianship; authority representation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The protocol representation does not itself determine whether guardianship is legally valid in a particular jurisdiction.
 
 ---
@@ -550,12 +562,14 @@ The protocol representation does not itself determine whether guardianship is le
 Section 59, examples: “organisational administrator”.
 
 **Requirement**  
-The model MAY represent an organisational administrator as a delegated consent authority for an organisational or managed identity.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Delegated consent; organisational governance.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The delegation should be limited to the administrator’s actual organisational authority.
 
 ---
@@ -566,12 +580,14 @@ The delegation should be limited to the administrator’s actual organisational 
 Section 59, examples: “legal representative”.
 
 **Requirement**  
-The model MAY represent a legal representative as a delegated consent authority where valid representative authority exists.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Delegated consent; legal authority; representation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The underlying authority may require external legal verification.
 
 ---
@@ -582,12 +598,14 @@ The underlying authority may require external legal verification.
 Section 59, examples: “enterprise security policy”.
 
 **Requirement**  
-The model MAY permit an applicable enterprise security policy to approve, deny or constrain permissions on behalf of a managed identity.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Enterprise governance; policy enforcement; delegated consent.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Policy-based authority should remain attributable and distinguishable from direct approval by an individual user.
 
 ---
@@ -598,12 +616,14 @@ Policy-based authority should remain attributable and distinguishable from direc
 Section 59, examples: “delegated agent”.
 
 **Requirement**  
-The model MAY represent a delegated agent as an authority capable of approving permissions within the agent’s authorised limits.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Delegated consent; agent authority; scope limitation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The agent must not be able to approve beyond the delegation it received.
 
 ---

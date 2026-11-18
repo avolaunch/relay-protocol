@@ -96,12 +96,14 @@ Authority to create content while the user is present does not automatically aut
 Section 36 example: `"interactionMode": "user-present-only"`.
 
 **Requirement**  
-The permission model SHOULD support an explicit condition restricting an action to user-present execution only.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Conditional permission; interaction-mode scope; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The example syntax is illustrative and not treated as a final wire format.
 
 ---
@@ -696,12 +698,14 @@ The record may identify a grant or another revocable authority object supported 
 Section 40 example field: `"grant": "grant_01JX8K"`.
 
 **Requirement**  
-A Revocation Record MUST identify the grant or other authority object being revoked.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Traceability; revocation target.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The identifier must be sufficient to prevent ambiguity about which authority became invalid.
 
 ---
@@ -712,12 +716,14 @@ The identifier must be sufficient to prevent ambiguity about which authority bec
 Section 40 example field: `"revokedAt"`.
 
 **Requirement**  
-A Revocation Record MUST identify the time at which revocation became effective or was recorded.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Temporal metadata; authority lifecycle.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The final protocol must clarify any distinction between requested, recorded and effective times where they differ.
 
 ---
@@ -728,12 +734,14 @@ The final protocol must clarify any distinction between requested, recorded and 
 Section 40 example field: `"revokedBy"`.
 
 **Requirement**  
-A Revocation Record MUST identify the identity or valid authority that authorised the revocation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Authority attribution; auditability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Revocation must not be accepted solely because an unauthorised party submitted a correctly structured record.
 
 ---
@@ -744,12 +752,14 @@ Revocation must not be accepted solely because an unauthorised party submitted a
 Section 40 example field `reason` and the list of possible reasons.
 
 **Requirement**  
-A Revocation Record SHOULD support a structured reason for the revocation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Revocation metadata; auditability; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The reason may be generalised or withheld where disclosure creates risk.
 
 ---
@@ -760,12 +770,14 @@ The reason may be generalised or withheld where disclosure creates risk.
 Section 40 example field: `"signature": "..."`.
 
 **Requirement**  
-A Revocation Record MUST be protected by a valid signature or equivalent protocol integrity and authority mechanism.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Integrity; authority proof; revocation security.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The example uses a signature, but the exact serialisation and cryptographic mechanism remain implementation details unless fixed elsewhere.
 
 ---
@@ -776,12 +788,14 @@ The example uses a signature, but the exact serialisation and cryptographic mech
 Section 40 possible reason: `user-revoked`.
 
 **Requirement**  
-The revocation-reason vocabulary SHOULD support user-initiated revocation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Reason vocabulary; user control; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The exact token shown in the source is illustrative unless adopted by the final schema.
 
 ---
@@ -792,12 +806,14 @@ The exact token shown in the source is illustrative unless adopted by the final 
 Section 40 possible reason: `expired`.
 
 **Requirement**  
-The revocation or invalidation vocabulary SHOULD support authority that is no longer valid because it expired.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Reason vocabulary; temporal expiry; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 An implementation may distinguish natural expiration from an active revocation event while preserving a common invalid-authority model.
 
 ---
@@ -808,12 +824,14 @@ An implementation may distinguish natural expiration from an active revocation e
 Section 40 possible reason: `application-compromised`.
 
 **Requirement**  
-The revocation-reason vocabulary SHOULD support application compromise as a reason for invalidating authority.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Security incident; reason vocabulary; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 This reason can support rapid invalidation of grants, keys, sessions or refresh authority associated with the compromised application.
 
 ---
@@ -824,12 +842,14 @@ This reason can support rapid invalidation of grants, keys, sessions or refresh 
 Section 40 possible reason: `application-suspended`.
 
 **Requirement**  
-The revocation-reason vocabulary SHOULD support application suspension as a reason for invalidating or pausing authority.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Application status; reason vocabulary; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The final protocol should distinguish temporary suspension from permanent revocation where their effects differ.
 
 ---
@@ -840,12 +860,14 @@ The final protocol should distinguish temporary suspension from permanent revoca
 Section 40 possible reason: `scope-replaced`.
 
 **Requirement**  
-The revocation-reason vocabulary SHOULD support replacement of prior scope authority by a revised grant.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Grant supersession; reason vocabulary; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 This supports auditable scope reduction or restructuring without representing the application as wholly revoked.
 
 ---
@@ -856,12 +878,14 @@ This supports auditable scope reduction or restructuring without representing th
 Section 40 possible reason: `provider-security-action`.
 
 **Requirement**  
-The revocation-reason vocabulary SHOULD support a provider security action as a reason for invalidating authority.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Provider security; reason vocabulary; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The provider must itself possess valid protocol or policy authority to take the action.
 
 ---
@@ -872,12 +896,14 @@ The provider must itself possess valid protocol or policy authority to take the 
 Section 40 possible reason: `identity-recovery`.
 
 **Requirement**  
-The revocation-reason vocabulary SHOULD support identity recovery as a reason for invalidating prior application authority.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Recovery security; reason vocabulary; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Recovery may require invalidating grants, keys or sessions that existed before control was restored.
 
 ---
@@ -888,12 +914,14 @@ Recovery may require invalidating grants, keys or sessions that existed before c
 Section 40 possible reason: `controller-change`.
 
 **Requirement**  
-The revocation-reason vocabulary SHOULD support a material application-controller change as a reason for invalidating prior authority.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Application governance; reason vocabulary; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 A controller change may also trigger manifest versioning and re-authorisation requirements in later sections.
 
 ---

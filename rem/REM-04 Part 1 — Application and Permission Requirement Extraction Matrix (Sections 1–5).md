@@ -112,12 +112,14 @@ Other interactions must still be limited, declared and authorised through a vali
 Section 1, examples: social interface, publishing tool, portfolio builder, AI assistant, messaging service, professional network, analytics service, import or migration tool, moderation service, and mobile or desktop client.
 
 **Requirement**  
-The Application and Permission Model MUST support varied application functions without restricting Relay Applications to a single product category or interface type.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Application diversity; extensibility; interoperability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The examples are illustrative rather than an exhaustive taxonomy.
 
 ---

@@ -272,12 +272,14 @@ The source example describes both granted capabilities and explicit exclusions.
 Section 26 example: the application can read the public profile, create and edit posts at the user’s instruction, and cache those posts for seven days.
 
 **Requirement**  
-A concrete consent explanation SHOULD identify the principal capabilities that approval would grant.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Consent explanation; capability disclosure; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The example is illustrative rather than a mandatory wording template.
 
 ---
@@ -288,12 +290,14 @@ The example is illustrative rather than a mandatory wording template.
 Section 26 example: the application cannot read private records, delete posts, train AI models or share copies with third parties.
 
 **Requirement**  
-A concrete consent explanation SHOULD identify material capabilities or uses that are excluded from the proposed grant.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Consent explanation; restriction disclosure; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Explaining exclusions helps prevent users from interpreting narrow access as broader authority.
 
 ---

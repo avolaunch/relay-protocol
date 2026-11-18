@@ -146,12 +146,14 @@ Extensions should preserve machine readability and should not silently redefine 
 Section 17, possible core purposes: `identity-display`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing identity display.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; identity presentation; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 This purpose covers use of identity data to present an identity to a user or audience.
 
 ---
@@ -162,12 +164,14 @@ This purpose covers use of identity data to present an identity to a user or aud
 Section 17, possible core purposes: `content-display`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing content display.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; content presentation; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 This should remain distinguishable from publishing, indexing, analytics or model training.
 
 ---
@@ -178,12 +182,14 @@ This should remain distinguishable from publishing, indexing, analytics or model
 Section 17, possible core purposes: `content-publishing`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing content publishing.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; publishing; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Publishing should not be inferred merely from read or draft-creation access.
 
 ---
@@ -194,12 +200,14 @@ Publishing should not be inferred merely from read or draft-creation access.
 Section 17, possible core purposes: `communication`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing communication.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; messaging; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The scope and communication channels remain subject to the separate resource and action grant.
 
 ---
@@ -210,12 +218,14 @@ The scope and communication channels remain subject to the separate resource and
 Section 17, possible core purposes: `search`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing search.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; discovery; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Search should remain distinguishable from persistent indexing where relevant.
 
 ---
@@ -226,12 +236,14 @@ Search should remain distinguishable from persistent indexing where relevant.
 Section 17, possible core purposes: `indexing`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing indexing.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; indexing; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Indexing may involve durable derived representations and therefore may require different retention or processing disclosures from transient search.
 
 ---
@@ -242,12 +254,14 @@ Indexing may involve durable derived representations and therefore may require d
 Section 17, possible core purposes: `recommendation`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing recommendation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; recommendation systems; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Recommendation remains distinct from analytics, personalisation and general model training.
 
 ---
@@ -258,12 +272,14 @@ Recommendation remains distinct from analytics, personalisation and general mode
 Section 17, possible core purposes: `analytics`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing analytics.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; analytics; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The declaration does not itself authorise any particular data scope or retention period.
 
 ---
@@ -274,12 +290,14 @@ The declaration does not itself authorise any particular data scope or retention
 Section 17, possible core purposes: `personalisation`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing personalisation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; personalisation; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Personalisation may overlap operationally with AI processing but remains a distinct declared purpose.
 
 ---
@@ -290,12 +308,14 @@ Personalisation may overlap operationally with AI processing but remains a disti
 Section 17, possible core purposes: `moderation`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing moderation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; moderation; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Moderation purpose does not imply a universal moderation policy or unrestricted access to all records.
 
 ---
@@ -306,12 +326,14 @@ Moderation purpose does not imply a universal moderation policy or unrestricted 
 Section 17, possible core purposes: `backup`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing backup.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; continuity; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Backup-related access should still declare scope, retention and restoration implications.
 
 ---
@@ -322,12 +344,14 @@ Backup-related access should still declare scope, retention and restoration impl
 Section 17, possible core purposes: `migration`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing migration.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; portability; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Migration purpose does not automatically grant high-authority migration actions, which require explicit action scope.
 
 ---
@@ -338,12 +362,14 @@ Migration purpose does not automatically grant high-authority migration actions,
 Section 17, possible core purposes: `AI-inference`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing AI inference.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; AI processing; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Inference should remain distinguishable from fine-tuning and general training.
 
 ---
@@ -354,12 +380,14 @@ Inference should remain distinguishable from fine-tuning and general training.
 Section 17, possible core purposes: `AI-training`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing AI training.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; AI governance; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Training is materially different from transient inference and should not be inferred from a general AI declaration.
 
 ---
@@ -370,12 +398,14 @@ Training is materially different from transient inference and should not be infe
 Section 17, possible core purposes: `research`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing research.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; research; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The term may require additional explanatory text to identify the specific research context and data use.
 
 ---
@@ -386,12 +416,14 @@ The term may require additional explanatory text to identify the specific resear
 Section 17, possible core purposes: `commercial-licensing`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing commercial licensing.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; commercial use; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Commercial licensing purpose remains separate from legal usage rights and must not override record-level rights declarations.
 
 ---
@@ -402,12 +434,14 @@ Commercial licensing purpose remains separate from legal usage rights and must n
 Section 17, possible core purposes: `security`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing security.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; security operations; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Security purpose must not be used as an unlimited catch-all for unrelated data access.
 
 ---
@@ -418,12 +452,14 @@ Security purpose must not be used as an unlimited catch-all for unrelated data a
 Section 17, possible core purposes: `fraud-prevention`.
 
 **Requirement**  
-The core purpose vocabulary SHOULD support a machine-readable purpose representing fraud prevention.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Purpose vocabulary; risk control; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Fraud-prevention access remains subject to separate resource, action, duration and retention limits.
 
 ---
@@ -484,12 +520,14 @@ The declaration concerns copies, caches or derived data held outside the authori
 Section 18, possible declarations: `no-retention`.
 
 **Requirement**  
-The retention model MUST be capable of representing that an application does not retain data outside the repository.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Retention vocabulary; data minimisation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Operational logs or unavoidable transport buffers may require separate treatment in later specification work.
 
 ---
@@ -500,12 +538,14 @@ Operational logs or unavoidable transport buffers may require separate treatment
 Section 18, possible declarations: `session-only`.
 
 **Requirement**  
-The retention model MUST be capable of representing retention limited to the active session.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Retention vocabulary; session handling.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The end condition for the session should be unambiguous to implementations.
 
 ---
@@ -516,12 +556,14 @@ The end condition for the session should be unambiguous to implementations.
 Section 18, possible declarations: `temporary-cache`.
 
 **Requirement**  
-The retention model MUST be capable of representing temporary caching outside the repository.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Retention vocabulary; caching.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 A temporary-cache declaration should normally be accompanied by a machine-readable duration.
 
 ---
@@ -532,12 +574,14 @@ A temporary-cache declaration should normally be accompanied by a machine-readab
 Section 18, possible declarations: `retained-until-revocation`.
 
 **Requirement**  
-The retention model MUST be capable of representing retention that continues until the Permission Grant is revoked.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Retention vocabulary; revocation lifecycle.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Revocation ends authorised future retention but cannot by itself technically prove deletion of every external copy.
 
 ---
@@ -548,12 +592,14 @@ Revocation ends authorised future retention but cannot by itself technically pro
 Section 18, possible declarations: `retained-for-defined-period`.
 
 **Requirement**  
-The retention model MUST be capable of representing retention for a defined period.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Retention vocabulary; time limitation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The period should be represented in a machine-readable format.
 
 ---
@@ -564,12 +610,14 @@ The period should be represented in a machine-readable format.
 Section 18, possible declarations: `retained-indefinitely`.
 
 **Requirement**  
-The retention model MUST be capable of representing indefinite retention.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Retention vocabulary; high-impact disclosure.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Indefinite retention is a disclosure state, not an endorsement or guarantee that such retention is lawful or acceptable.
 
 ---
@@ -710,12 +758,14 @@ The declaration must cover disclosure of copies as well as any direct repository
 Section 19, possible values: `none`.
 
 **Requirement**  
-The onward-sharing model MUST be capable of representing that no third-party disclosure is permitted or intended.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Onward-sharing vocabulary; data minimisation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The meaning should be aligned with any separately declared processors or infrastructure providers.
 
 ---
@@ -726,12 +776,14 @@ The meaning should be aligned with any separately declared processors or infrast
 Section 19, possible values: `processors-only`.
 
 **Requirement**  
-The onward-sharing model MUST be capable of representing disclosure limited to processors acting on behalf of the application.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Onward-sharing vocabulary; processor access.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Processor access should not be represented as unrestricted independent use.
 
 ---
@@ -742,12 +794,14 @@ Processor access should not be represented as unrestricted independent use.
 Section 19, possible values: `named-parties`.
 
 **Requirement**  
-The onward-sharing model MUST be capable of representing disclosure limited to specifically named third parties.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Onward-sharing vocabulary; named recipients.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Named parties should be identifiable in a stable and inspectable manner where possible.
 
 ---
@@ -758,12 +812,14 @@ Named parties should be identifiable in a stable and inspectable manner where po
 Section 19, possible values: `category-based`.
 
 **Requirement**  
-The onward-sharing model MUST be capable of representing disclosure to third parties described by category.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Onward-sharing vocabulary; recipient categories.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Category-based wording should be specific enough to support meaningful consent and policy evaluation.
 
 ---
@@ -774,12 +830,14 @@ Category-based wording should be specific enough to support meaningful consent a
 Section 19, possible values: `unrestricted`.
 
 **Requirement**  
-The onward-sharing model MUST be capable of representing unrestricted third-party disclosure.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Onward-sharing vocabulary; high-impact disclosure.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 This is a disclosure state and does not itself establish lawfulness or compatibility with record-level rights.
 
 ---

@@ -48,12 +48,14 @@ The source uses “should”, so this is a recommended requirement rather than a
 Section 21 example field: `"inference": true`.
 
 **Requirement**  
-An AI-related Permission Request SHOULD declare whether requested data will be used for AI inference.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-AI transparency; purpose limitation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Inference concerns use of records to produce an output, typically for the requesting user or application workflow.
 
 ---
@@ -64,12 +66,14 @@ Inference concerns use of records to produce an output, typically for the reques
 Section 21 example field: `"personalisation": true`.
 
 **Requirement**  
-An AI-related Permission Request SHOULD declare whether requested data will be used for personalisation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-AI transparency; personalisation; purpose limitation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Personalisation must remain distinguishable from general model training.
 
 ---
@@ -80,12 +84,14 @@ Personalisation must remain distinguishable from general model training.
 Section 21 example field: `"embedding": true`.
 
 **Requirement**  
-An AI-related Permission Request SHOULD declare whether requested data will be transformed into embeddings, vectors or another searchable representation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-AI transparency; derived data; indexing.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The declaration should not be omitted merely because the resulting representation is not human-readable.
 
 ---
@@ -96,12 +102,14 @@ The declaration should not be omitted merely because the resulting representatio
 Section 21 example field: `"fineTuning": false`.
 
 **Requirement**  
-An AI-related Permission Request SHOULD declare whether requested data will be used to fine-tune or otherwise adapt a model.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-AI transparency; model adaptation; purpose limitation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Fine-tuning must be represented separately from inference, personalisation and general training.
 
 ---
@@ -112,12 +120,14 @@ Fine-tuning must be represented separately from inference, personalisation and g
 Section 21 example field: `"generalTraining": false`.
 
 **Requirement**  
-An AI-related Permission Request SHOULD declare whether requested data will be used for general model training.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-AI transparency; model training; high-impact purpose.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 A declaration permitting inference must not be interpreted as permission for general training.
 
 ---
@@ -128,12 +138,14 @@ A declaration permitting inference must not be interpreted as permission for gen
 Section 21 example field: `"humanReview": false`.
 
 **Requirement**  
-An AI-related Permission Request SHOULD declare whether human reviewers may inspect inputs, outputs or related processing artefacts.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Human review; privacy transparency; permission request.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Human review is a separate disclosure from automated AI processing.
 
 ---
@@ -144,12 +156,14 @@ Human review is a separate disclosure from automated AI processing.
 Section 21 example field: `"externalModelProvider": "rid:app:model-provider"`.
 
 **Requirement**  
-An AI-related Permission Request SHOULD identify any external model provider involved in processing.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Third-party processing; AI transparency; application identity.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Where the external provider has a Relay Application Identity, that stable identity should be used rather than only a brand name.
 
 ---
@@ -436,12 +450,14 @@ The source identifies imports, single publications, exports, migrations, restric
 Section 23 example: “import one archive”.
 
 **Requirement**  
-An application MAY request a one-time capability limited to importing one archive.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Import; one-time capability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The capability must not imply continuing import or repository access.
 
 ---
@@ -452,12 +468,14 @@ The capability must not imply continuing import or repository access.
 Section 23 example: “publish one post”.
 
 **Requirement**  
-An application MAY request a one-time capability limited to publishing one post or equivalent record.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Publication; one-time capability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The capability should identify the permitted operation and relevant target or schema context.
 
 ---
@@ -468,12 +486,14 @@ The capability should identify the permitted operation and relevant target or sc
 Section 23 example: “download one export”.
 
 **Requirement**  
-An application MAY request a one-time capability limited to downloading one export.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Export; one-time capability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Repeated exports require separate or broader explicit authority.
 
 ---
@@ -484,12 +504,14 @@ Repeated exports require separate or broader explicit authority.
 Section 23 example: “approve one migration”.
 
 **Requirement**  
-A migration approval MAY be represented as a one-time capability limited to one migration operation.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Migration; high-authority action; one-time capability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The capability should not establish open-ended migration authority.
 
 ---
@@ -500,12 +522,14 @@ The capability should not establish open-ended migration authority.
 Section 23 example: “share one restricted record”.
 
 **Requirement**  
-An application MAY request a one-time capability limited to sharing one restricted record.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Restricted access; sharing; one-time capability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The target record and intended recipient or audience should be unambiguous.
 
 ---
@@ -516,12 +540,14 @@ The target record and intended recipient or audience should be unambiguous.
 Section 23 example: “upload one blob”.
 
 **Requirement**  
-An application MAY request a one-time capability limited to uploading one blob.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Blob operation; one-time capability.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The capability may also be constrained by media type, size, purpose or destination.
 
 ---
@@ -630,12 +656,14 @@ Conditions narrow authority and must not silently broaden the underlying grant.
 Section 24 example: “May publish only after user confirmation”.
 
 **Requirement**  
-A Permission Grant MAY require user confirmation before a publishing operation is executed.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Conditional authorisation; publication; user confirmation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The application must not treat the initial grant as the final confirmation where the condition requires a later confirmation step.
 
 ---
@@ -646,12 +674,14 @@ The application must not treat the initial grant as the final confirmation where
 Section 24 example: “May read only public posts”.
 
 **Requirement**  
-A Permission Grant MAY restrict read access to public records only.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Visibility constraint; conditional access.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The condition must exclude unlisted, restricted and private records unless separately authorised.
 
 ---
@@ -662,12 +692,14 @@ The condition must exclude unlisted, restricted and private records unless separ
 Section 24 example: “May update only records it originally created”.
 
 **Requirement**  
-A Permission Grant MAY restrict update authority to records originally created by the authorised application.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Provenance-based constraint; update authority.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The repository must be able to determine the relevant creation provenance reliably.
 
 ---
@@ -678,12 +710,14 @@ The repository must be able to determine the relevant creation provenance reliab
 Section 24 example: “May upload files smaller than 50 MB”.
 
 **Requirement**  
-A Permission Grant MAY impose a maximum blob size on upload operations.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Blob constraint; resource control; conditional permission.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The limit should be represented in a machine-readable unit.
 
 ---
@@ -694,12 +728,14 @@ The limit should be represented in a machine-readable unit.
 Section 24 example: “May access private notes only from the user’s registered device”.
 
 **Requirement**  
-A Permission Grant MAY restrict access to specified or registered devices.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Device-bound access; private data; conditional permission.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Device identity and registration status must be verifiable at access time.
 
 ---
@@ -710,12 +746,14 @@ Device identity and registration status must be verifiable at access time.
 Section 24 example: “May export only after high-authority authentication”.
 
 **Requirement**  
-A Permission Grant MAY require high-authority authentication before an export or other sensitive operation is executed.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Step-up authentication; export; high-risk operation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Possession of an ordinary background session must not satisfy the condition unless the required authentication level is met.
 
 ---
@@ -726,12 +764,14 @@ Possession of an ordinary background session must not satisfy the condition unle
 Section 24 JSON example containing `userConfirmationRequired`, `maximumBlobSize` and `createdByApplicationOnly`.
 
 **Requirement**  
-Grant conditions SHOULD be represented in a machine-readable form that can be evaluated by the Relay Provider or authorisation service.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Policy automation; conditional authorisation; recommendation.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 The example field names are illustrative rather than a final fixed schema.
 
 ---
@@ -760,12 +800,14 @@ A relationship between objects is not itself an authorisation grant.
 Section 25 example: “permission to read a post does not automatically permit reading the author’s private profile”.
 
 **Requirement**  
-Permission to read a record MUST NOT automatically grant access to private profile information belonging to the record’s author.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Privacy boundary; non-inheritance; identity data.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Private profile access requires separate explicit authority.
 
 ---
@@ -776,12 +818,14 @@ Private profile access requires separate explicit authority.
 Section 25 example: “permission to read a project does not automatically permit reading every collaborator’s repository”.
 
 **Requirement**  
-Permission to read a project record MUST NOT automatically grant access to the repositories of its collaborators.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Cross-repository boundary; non-inheritance; privacy.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Each collaborator’s repository remains governed by its own authority and grants.
 
 ---
@@ -792,12 +836,14 @@ Each collaborator’s repository remains governed by its own authority and grant
 Section 25 example: “permission to access a folder-like collection does not necessarily permit deleted versions.”
 
 **Requirement**  
-Permission to access a collection MUST NOT be assumed to include access to deleted or historical versions unless the grant explicitly includes them.
+**Non-normative model example.** This entry preserves the cited illustration for traceability. It does not establish an independent protocol obligation or select a final schema, field, value, vocabulary, use case or implementation structure.
 
 **Classification**  
-Historical-data access; deletion state; non-inheritance.
+Illustrative source material; non-normative; excluded from catalogue generation.
 
 **Notes**  
+This entry is retained only so the example remains visible during design review. The authoritative source must independently establish any future normative requirement derived from this concept.
+
 Current content, historical versions and deleted versions are distinct resource scopes.
 
 ---
